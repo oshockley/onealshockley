@@ -651,40 +651,52 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Contact form handling with success/error feedback
+// Contact form handling with mailto fallback
 document.addEventListener('DOMContentLoaded', function() {
-    // Check for success parameter in URL
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('success') === 'true') {
-        alert('Thank you! Your message has been sent successfully. I will get back to you soon.');
-        // Remove the success parameter from URL
-        window.history.replaceState({}, document.title, window.location.pathname);
-    }
-    
-    // Enhanced form submission handling
     const form = document.querySelector('.contact-form');
     if (form) {
         form.addEventListener('submit', function(e) {
-            // Don't prevent default - let Formspree handle it
-            const submitBtn = form.querySelector('button[type="submit"]');
-            const originalText = submitBtn.textContent;
+            e.preventDefault();
             
-            // Show loading state
-            submitBtn.textContent = 'Sending...';
-            submitBtn.disabled = true;
+            // Get form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
             
-            // Set the _replyto field to the email input value
-            const emailInput = form.querySelector('input[name="email"]');
-            const replytoInput = form.querySelector('input[name="_replyto"]');
-            if (emailInput && replytoInput) {
-                replytoInput.value = emailInput.value;
+            // Validate form
+            if (!name || !email || !subject || !message) {
+                alert('Please fill in all fields.');
+                return;
             }
             
-            // Re-enable button after a delay (in case of issues)
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+            
+            // Create mailto URL with form data
+            const emailBody = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+            const mailtoUrl = `mailto:shockleyoneal@gmail.com?subject=${encodeURIComponent(subject)}&body=${emailBody}`;
+            
+            // Show success message and open email client
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Opening Email Client...';
+            submitBtn.disabled = true;
+            
+            // Open email client
+            window.location.href = mailtoUrl;
+            
+            // Reset form and button after a short delay
             setTimeout(() => {
+                form.reset();
                 submitBtn.textContent = originalText;
                 submitBtn.disabled = false;
-            }, 5000);
+                alert('Your email client should have opened with the message pre-filled. Please send the email from your email client.');
+            }, 1500);
         });
     }
 });
