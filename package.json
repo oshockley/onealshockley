@@ -1,0 +1,37 @@
+{
+  "name": "oneal-shockleys-portfolio",
+  "version": "1.0.0",
+  "description": "Professional portfolio website for Oneal Shockleys - Software Developer",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000 --open=/",
+    "build": "echo 'No build process needed for static site'",
+    "deploy": "echo 'Ready for deployment'",
+    "serve": "python -m http.server 8000"
+  },
+  "keywords": [
+    "portfolio",
+    "software-developer",
+    "website",
+    "html",
+    "css",
+    "javascript",
+    "responsive",
+    "professional"
+  ],
+  "author": "Oneal Shockleys",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onealshockleys/portfolio"
+  },
+  "homepage": "https://onealshockleys.github.io/portfolio",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

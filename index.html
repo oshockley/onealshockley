@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O'Neal Shockley - Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>O'Neal Shockley</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link" data-translate="nav-home">Home</a>
+                <a href="#about" class="nav-link" data-translate="nav-about">About</a>
+                <a href="#skills" class="nav-link" data-translate="nav-skills">Skills</a>
+                <a href="#projects" class="nav-link" data-translate="nav-projects">Projects</a>
+                <a href="#experience" class="nav-link" data-translate="nav-experience">Experience</a>
+                <a href="#contact" class="nav-link" data-translate="nav-contact">Contact</a>
+                <div class="language-selector">
+                    <select id="language-select" class="language-dropdown">
+                        <option value="en">🇺🇸 English</option>
+                        <option value="es">🇪🇸 Español</option>
+                        <option value="zh">🇨🇳 中文</option>
+                        <option value="de">🇩🇪 Deutsch</option>
+                        <option value="it">🇮🇹 Italiano</option>
+                        <option value="fr">🇫🇷 Français</option>
+                    </select>
+                </div>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span data-translate="hero-greeting">Hi, I'm</span> <span class="highlight">O'Neal Shockley</span>
+                </h1>
+                <h2 class="hero-subtitle" data-translate="hero-title">Software Developer</h2>
+                <p class="hero-description" data-translate="hero-description">
+                    I craft innovative, user-focused software solutions that scale seamlessly and solve real-world problems. Committed to clean, maintainable code, exceptional user experience, and continuous growth as a developer.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary" data-translate="btn-work">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary" data-translate="btn-contact">Get In Touch</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/oshockley" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/oneal-shockley/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:shockleyoneal@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-translate="about-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-translate="about-text-1">
+                        I'm a passionate software developer with expertise in modern web technologies 
+                        and a strong foundation in computer science principles. I enjoy tackling complex 
+                        problems and turning ideas into functional, user-friendly applications.
+                    </p>
+                    <p data-translate="about-text-2">
+                        My journey in software development has led me to work with various technologies 
+                        and frameworks, always staying current with industry trends and best practices. 
+                        I believe in writing clean, maintainable code and creating solutions that make 
+                        a positive impact.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>3+</h3>
+                            <p data-translate="stat-experience">Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>20+</h3>
+                            <p data-translate="stat-projects">Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p data-translate="stat-satisfaction">Client Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-placeholder">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-translate="skills-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 data-translate="skill-frontend">Frontend Development</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">Sass</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 data-translate="skill-backend">Backend Development</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">GraphQL</span>
+                        <span class="skill-tag">JWT</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 data-translate="skill-database">Database & Cloud</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 data-translate="skill-tools">Tools & Other</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Agile</span>
+                        <span class="skill-tag">Testing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-translate="projects-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>VantraOrbit</h3>
+                        <p data-translate="project-vantra-desc">An innovative orbital tracking and space management application designed to monitor satellite movements and space debris with real-time data visualization.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>API Integration</span>
+                            <span>Data Visualization</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/oshockley/VantraOrbit" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> <span data-translate="view-code">View Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Planora</h3>
+                        <p data-translate="project-planora-desc">A comprehensive planning and scheduling application that helps users organize their tasks, events, and goals with intelligent automation and intuitive design.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Express.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/oshockley/Planora" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> <span data-translate="view-code">View Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>HillLife</h3>
+                        <p data-translate="project-hilllife-desc">A lifestyle and wellness platform focused on outdoor activities, hiking trails, and community building for outdoor enthusiasts and adventure seekers.</p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Geolocation API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/oshockley/HillLife" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> <span data-translate="view-code">View Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>SleepTrackerPro</h3>
+                        <p data-translate="project-sleep-desc">A full-featured Sleep Tracker App that helps users monitor their sleep patterns, improve sleep hygiene, and maintain a healthy routine. Built with modern web technologies.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Web APIs</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/oshockley/SleepTrackerPro" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> <span data-translate="view-code">View Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>DreamLayer</h3>
+                        <p data-translate="project-dream-desc">A cloud-based application layer that provides seamless integration between different software systems with advanced data processing and workflow automation.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>PostgreSQL</span>
+                            <span>Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/oshockley/DreamLayer" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> <span data-translate="view-code">View Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-compact-disc"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>CDSlashCI</h3>
+                        <p data-translate="project-cd-desc">A continuous deployment and continuous integration pipeline solution that streamlines software development workflows with automated testing, building, and deployment processes.</p>
+                        <div class="project-tech">
+                            <span>CI/CD</span>
+                            <span>DevOps</span>
+                            <span>Automation</span>
+                            <span>Pipeline</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/oshockley/CDSlashCI" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> <span data-translate="view-code">View Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title" data-translate="experience-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 - Present</div>
+                    <div class="timeline-content">
+                        <h3 data-translate="exp-title-1">Aspiring Software Developer</h3>
+                        <h4 data-translate="exp-subtitle-1">Career Transition - Self-Directed Learning</h4>
+                        <p data-translate="exp-desc-1">Currently pursuing a career transition into software development through intensive coding bootcamp and self-directed learning. Building practical projects and developing technical skills.</p>
+                        <ul>
+                            <li data-translate="exp-item-1-1">Completed coding bootcamp coursework in web development</li>
+                            <li data-translate="exp-item-1-2">Built multiple projects including SleepTrackerPro and Task Manager App</li>
+                            <li data-translate="exp-item-1-3">Learning HTML, CSS, JavaScript, and modern web technologies</li>
+                            <li data-translate="exp-item-1-4">Developing portfolio projects to demonstrate technical abilities</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2020 - 2024</div>
+                    <div class="timeline-content">
+                        <h3 data-translate="exp-title-2">Fitness Sales Professional</h3>
+                        <h4 data-translate="exp-subtitle-2">Fitness Industry</h4>
+                        <p data-translate="exp-desc-2">Developed strong communication, problem-solving, and client relationship skills while working in fitness sales. Gained valuable experience in customer service and business development.</p>
+                        <ul>
+                            <li data-translate="exp-item-2-1">Built relationships with clients and understood their needs</li>
+                            <li data-translate="exp-item-2-2">Developed strong communication and presentation skills</li>
+                            <li data-translate="exp-item-2-3">Learned to work under pressure and meet targets</li>
+                            <li data-translate="exp-item-2-4">Gained experience in customer service and problem resolution</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - Present</div>
+                    <div class="timeline-content">
+                        <h3 data-translate="exp-title-3">Technical Learning Journey</h3>
+                        <h4 data-translate="exp-subtitle-3">Skill Development & Education</h4>
+                        <p data-translate="exp-desc-3">Embarked on an intensive learning journey to transition into software development. Focusing on web technologies and building practical coding skills through hands-on projects.</p>
+                        <ul>
+                            <li data-translate="exp-item-3-1">Enrolled in coding bootcamp and online courses</li>
+                            <li data-translate="exp-item-3-2">Created study guides and learning materials</li>
+                            <li data-translate="exp-item-3-3">Built functional web applications from scratch</li>
+                            <li data-translate="exp-item-3-4">Actively seeking opportunities to apply technical skills professionally</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-translate="contact-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 data-translate="contact-heading">Let's Work Together</h3>
+                    <p data-translate="contact-text">I'm always interested in new opportunities and exciting projects. Whether you're looking for a developer to join your team or need help with a specific project, I'd love to hear from you.</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4 data-translate="contact-email-label">Email</h4>
+                                <p>shockleyoneal@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4 data-translate="contact-phone-label">Phone</h4>
+                                <p>(949) 315-8598</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4 data-translate="contact-location-label">Location</h4>
+                                <p>Laguna Niguel, California</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" action="https://formspree.io/f/shockleyoneal@gmail.com" method="POST">
+                    <div class="form-group">
+                        <label for="name" data-translate="form-name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-translate="form-email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" data-translate="form-subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-translate="form-message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <input type="hidden" name="_next" value="mailto:shockleyoneal@gmail.com">
+                    <input type="hidden" name="_subject" value="New Contact Form Message">
+                    <button type="submit" class="btn btn-primary" data-translate="form-send">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>O'Neal Shockley</h3>
+                    <p data-translate="footer-tagline">Software Developer passionate about creating innovative solutions.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home" data-translate="nav-home">Home</a>
+                    <a href="#about" data-translate="nav-about">About</a>
+                    <a href="#projects" data-translate="nav-projects">Projects</a>
+                    <a href="#contact" data-translate="nav-contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/oshockley" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/oneal-shockley/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:shockleyoneal@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-translate="footer-copyright">&copy; 2025 O'Neal Shockley. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
