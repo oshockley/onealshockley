@@ -651,6 +651,44 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Contact form handling with success/error feedback
+document.addEventListener('DOMContentLoaded', function() {
+    // Check for success parameter in URL
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('success') === 'true') {
+        alert('Thank you! Your message has been sent successfully. I will get back to you soon.');
+        // Remove the success parameter from URL
+        window.history.replaceState({}, document.title, window.location.pathname);
+    }
+    
+    // Enhanced form submission handling
+    const form = document.querySelector('.contact-form');
+    if (form) {
+        form.addEventListener('submit', function(e) {
+            // Don't prevent default - let Formspree handle it
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            
+            // Show loading state
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            // Set the _replyto field to the email input value
+            const emailInput = form.querySelector('input[name="email"]');
+            const replytoInput = form.querySelector('input[name="_replyto"]');
+            if (emailInput && replytoInput) {
+                replytoInput.value = emailInput.value;
+            }
+            
+            // Re-enable button after a delay (in case of issues)
+            setTimeout(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }, 5000);
+        });
+    }
+});
+
 // Parallax effect for hero section
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
