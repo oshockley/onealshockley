@@ -651,54 +651,122 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Contact form handling with mailto fallback
+// BULLETPROOF Contact form - Opens Gmail directly with pre-filled message
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.querySelector('.contact-form');
+    const form = document.getElementById('contactForm');
     if (form) {
         form.addEventListener('submit', function(e) {
             e.preventDefault();
             
             // Get form data
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject_field').value.trim();
+            const message = document.getElementById('message').value.trim();
             
             // Validate form
             if (!name || !email || !subject || !message) {
-                alert('Please fill in all fields.');
+                alert('⚠️ Please fill in all fields.');
                 return;
             }
             
             // Email validation
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(email)) {
-                alert('Please enter a valid email address.');
+                alert('⚠️ Please enter a valid email address.');
                 return;
             }
             
-            // Create mailto URL with form data
-            const emailBody = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${message}`;
-            const mailtoUrl = `mailto:shockleyoneal@gmail.com?subject=${encodeURIComponent(subject)}&body=${emailBody}`;
+            // Create Gmail compose URL
+            const emailBody = `Hi O'Neal,
+
+My name is ${name} and I'm reaching out from your portfolio website.
+
+${message}
+
+Best regards,
+${name}
+${email}`;
+
+            const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=shockleyoneal@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
             
-            // Show success message and open email client
+            // Show success message and open Gmail
             const submitBtn = form.querySelector('button[type="submit"]');
             const originalText = submitBtn.textContent;
-            submitBtn.textContent = 'Opening Email Client...';
+            submitBtn.textContent = '✅ Opening Gmail...';
             submitBtn.disabled = true;
             
-            // Open email client
-            window.location.href = mailtoUrl;
+            // Open Gmail in new tab
+            window.open(gmailUrl, '_blank');
             
-            // Reset form and button after a short delay
+            // Show success message
             setTimeout(() => {
+                alert('✅ Gmail opened with your message! Please click "Send" in the Gmail tab to deliver your message.');
                 form.reset();
                 submitBtn.textContent = originalText;
                 submitBtn.disabled = false;
-                alert('Your email client should have opened with the message pre-filled. Please send the email from your email client.');
-            }, 1500);
+            }, 1000);
         });
     }
+    
+    // Add copy functionality for contact info
+    function addCopyFunctionality() {
+        const emailLinks = document.querySelectorAll('a[href^="mailto:shockleyoneal@gmail.com"]');
+        emailLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Copy email to clipboard
+                if (navigator.clipboard) {
+                    navigator.clipboard.writeText('shockleyoneal@gmail.com').then(() => {
+                        showNotification('📋 Email copied to clipboard!');
+                    });
+                }
+                
+                // Also open email client as fallback
+                setTimeout(() => {
+                    window.location.href = 'mailto:shockleyoneal@gmail.com';
+                }, 500);
+            });
+        });
+    }
+    
+    function showNotification(message) {
+        const notification = document.createElement('div');
+        notification.textContent = message;
+        notification.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #10b981;
+            color: white;
+            padding: 12px 16px;
+            border-radius: 8px;
+            z-index: 10000;
+            font-size: 14px;
+            font-weight: 500;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            animation: slideIn 0.3s ease;
+        `;
+        
+        // Add animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideIn {
+                from { transform: translateX(100%); opacity: 0; }
+                to { transform: translateX(0); opacity: 1; }
+            }
+        `;
+        document.head.appendChild(style);
+        
+        document.body.appendChild(notification);
+        setTimeout(() => {
+            notification.remove();
+            style.remove();
+        }, 4000);
+    }
+    
+    addCopyFunctionality();
 });
 
 // Parallax effect for hero section
