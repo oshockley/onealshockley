@@ -651,85 +651,35 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// BULLETPROOF Contact form - Opens Gmail directly with pre-filled message
+// Simple contact form handling for Netlify Forms
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('contactForm');
+    const form = document.querySelector('.contact-form');
     if (form) {
         form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const subject = document.getElementById('subject_field').value.trim();
-            const message = document.getElementById('message').value.trim();
-            
-            // Validate form
-            if (!name || !email || !subject || !message) {
-                alert('⚠️ Please fill in all fields.');
-                return;
-            }
-            
-            // Email validation
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                alert('⚠️ Please enter a valid email address.');
-                return;
-            }
-            
-            // Create Gmail compose URL
-            const emailBody = `Hi O'Neal,
-
-My name is ${name} and I'm reaching out from your portfolio website.
-
-${message}
-
-Best regards,
-${name}
-${email}`;
-
-            const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=shockleyoneal@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
-            
-            // Show success message and open Gmail
             const submitBtn = form.querySelector('button[type="submit"]');
             const originalText = submitBtn.textContent;
-            submitBtn.textContent = '✅ Opening Gmail...';
+            
+            // Show loading state
+            submitBtn.textContent = 'Sending...';
             submitBtn.disabled = true;
             
-            // Open Gmail in new tab
-            window.open(gmailUrl, '_blank');
-            
-            // Show success message
-            setTimeout(() => {
-                alert('✅ Gmail opened with your message! Please click "Send" in the Gmail tab to deliver your message.');
-                form.reset();
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-            }, 1000);
+            // Form will be handled by Netlify automatically
+            // No need to prevent default - let it submit naturally
         });
     }
     
     // Add copy functionality for contact info
-    function addCopyFunctionality() {
-        const emailLinks = document.querySelectorAll('a[href^="mailto:shockleyoneal@gmail.com"]');
-        emailLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                // Copy email to clipboard
-                if (navigator.clipboard) {
-                    navigator.clipboard.writeText('shockleyoneal@gmail.com').then(() => {
-                        showNotification('📋 Email copied to clipboard!');
-                    });
-                }
-                
-                // Also open email client as fallback
-                setTimeout(() => {
-                    window.location.href = 'mailto:shockleyoneal@gmail.com';
-                }, 500);
-            });
+    const emailLinks = document.querySelectorAll('a[href^="mailto:shockleyoneal@gmail.com"]');
+    emailLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            // Copy email to clipboard
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText('shockleyoneal@gmail.com').then(() => {
+                    showNotification('📋 Email copied to clipboard!');
+                });
+            }
         });
-    }
+    });
     
     function showNotification(message) {
         const notification = document.createElement('div');
@@ -746,27 +696,13 @@ ${email}`;
             font-size: 14px;
             font-weight: 500;
             box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-            animation: slideIn 0.3s ease;
         `;
-        
-        // Add animation
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes slideIn {
-                from { transform: translateX(100%); opacity: 0; }
-                to { transform: translateX(0); opacity: 1; }
-            }
-        `;
-        document.head.appendChild(style);
         
         document.body.appendChild(notification);
         setTimeout(() => {
             notification.remove();
-            style.remove();
-        }, 4000);
+        }, 3000);
     }
-    
-    addCopyFunctionality();
 });
 
 // Parallax effect for hero section
