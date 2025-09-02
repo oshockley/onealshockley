@@ -149,32 +149,6 @@ body {
     box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
 }
 
-.sound-toggle {
-    background: transparent;
-    border: none;
-    color: #6b7280;
-    cursor: pointer;
-    font-size: 1rem;
-    padding: 0.5rem;
-    border-radius: 6px;
-    transition: all 0.2s ease;
-    margin-left: 0.5rem;
-}
-
-.sound-toggle:hover {
-    color: #2563eb;
-    background: rgba(37, 99, 235, 0.05);
-}
-
-.sound-toggle.muted {
-    color: #ef4444;
-}
-
-.sound-toggle.muted:hover {
-    color: #dc2626;
-    background: rgba(239, 68, 68, 0.05);
-}
-
 .nav-toggle {
     display: none;
     flex-direction: column;
@@ -255,11 +229,6 @@ body {
 
     .language-selector {
         margin-top: 1rem;
-    }
-
-    .sound-toggle {
-        margin-top: 1rem;
-        margin-left: 0;
     }
 }
 
@@ -1113,6 +1082,27 @@ section {
     padding-top: 2rem;
     border-top: 1px solid #374151;
     color: #94a3b8;
+}
+
+/* Footer Wave Background */
+.footer-wave-bg {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    background: transparent;
+    z-index: 0;
+    margin-bottom: -2px;
+}
+.footer-wave-bg svg {
+    display: block;
+    width: 100%;
+    height: 120px;
+    opacity: 0.9;
+    filter: blur(2px);
+}
+.footer {
+    position: relative;
+    z-index: 1;
 }
 
 /* Responsive Design */

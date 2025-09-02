@@ -51,11 +51,6 @@ const animationObserver = new IntersectionObserver((entries) => {
 document.addEventListener('DOMContentLoaded', () => {
     const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in');
     animatedElements.forEach(el => animationObserver.observe(el));
-    
-    // Initialize click sounds
-    if (typeof addClickSounds === 'function') {
-        addClickSounds();
-    }
 });
 
 // Enhanced Navigation Active State
