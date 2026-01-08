@@ -3,12 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O'Neal Shockley - Software Developer</title>
+    <meta name="description" content="O'Neal Shockley - Full Stack Software Developer specializing in React, Node.js, and modern web technologies. View my portfolio, projects, and get in touch for opportunities.">
+    <meta name="keywords" content="Software Developer, Full Stack Developer, JavaScript, React, Node.js, Web Development, Portfolio">
+    <meta name="author" content="O'Neal Shockley">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://onealshockley.com/">
+    <meta property="og:title" content="O'Neal Shockley - Software Developer">
+    <meta property="og:description" content="Full Stack Developer specializing in modern web technologies. Let's build something amazing together!">
+    <meta property="og:image" content="https://onealshockley.com/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://onealshockley.com/">
+    <meta property="twitter:title" content="O'Neal Shockley - Software Developer">
+    <meta property="twitter:description" content="Full Stack Developer specializing in modern web technologies. Let's build something amazing together!">
+    <meta property="twitter:image" content="https://onealshockley.com/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <title>O'Neal Shockley - Software Developer | Full Stack Development</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="advanced-styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://api.github.com">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "O'Neal Shockley",
+      "url": "https://onealshockley.com",
+      "jobTitle": "Software Developer",
+      "description": "Full Stack Software Developer specializing in React, Node.js, and modern web technologies",
+      "sameAs": [
+        "https://github.com/oshockley",
+        "https://www.linkedin.com/in/oneal-shockley/",
+        "mailto:shockleyoneal@gmail.com"
+      ]
+    }
+    </script>
 </head>
 <body>
+    <!-- Skip to main content link for accessibility -->
+    
     <!-- Page Loader -->
     <div class="page-loader" id="pageLoader">
         <div class="loader-content">
@@ -53,7 +101,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section id="home" class="hero" role="banner" aria-label="Hero section">
         <div class="hero-container">
             <div class="hero-content">
                 <div class="typing-container">
@@ -85,13 +133,33 @@
                 </div>
             </div>
             <div class="hero-image">
-                <div class="profile-card floating-animation">
-                    <div class="profile-placeholder">
-                        <i class="fas fa-user"></i>
+                <div class="status-card floating-animation">
+                    <div class="status-badge">
+                        <span class="status-dot-large"></span>
+                        <div class="status-info">
+                            <h4>Available for Work</h4>
+                            <p>Open to new opportunities</p>
+                        </div>
                     </div>
-                    <div class="status-indicator">
-                        <span class="status-dot"></span>
-                        <span class="status-text">Available for hire</span>
+                    <div class="quick-stats">
+                        <div class="quick-stat">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <strong>2+</strong>
+                                <span>Years Coding</span>
+                            </div>
+                        </div>
+                        <div class="quick-stat">
+                            <i class="fas fa-project-diagram"></i>
+                            <div>
+                                <strong>39+</strong>
+                                <span>Repositories</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="response-time">
+                        <i class="fas fa-clock"></i>
+                        <span>Usually responds in 24 hours</span>
                     </div>
                 </div>
             </div>
@@ -103,8 +171,11 @@
         </div>
     </section>
 
+    <!-- Main Content -->
+    <main id="main-content">
+    
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about" role="region" aria-label="About me">
         <div class="section-divider"></div>
         <div class="container">
             <h2 class="section-title fade-in" data-translate="about-title">About Me</h2>
@@ -140,6 +211,98 @@
                 <div class="about-image slide-in-right">
                     <div class="about-placeholder">
                         <i class="fas fa-code"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Marquee -->
+    <section class="tech-marquee-section">
+        <div class="container">
+            <h3 class="marquee-title">Technologies I Work With</h3>
+            <div class="marquee-container">
+                <div class="marquee-content">
+                    <div class="marquee-item">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="marquee-item">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="marquee-item">
+                        <i class="fab fa-node"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="marquee-item">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="marquee-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="marquee-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="marquee-item">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="marquee-item">
+                        <i class="fab fa-docker"></i>
+                        <span>Docker</span>
+                    </div>
+                    <div class="marquee-item">
+                        <i class="fab fa-aws"></i>
+                        <span>AWS</span>
+                    </div>
+                    <div class="marquee-item">
+                        <i class="fas fa-database"></i>
+                        <span>MongoDB</span>
+                    </div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="marquee-item">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="marquee-item">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="marquee-item">
+                        <i class="fab fa-node"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="marquee-item">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="marquee-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="marquee-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="marquee-item">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="marquee-item">
+                        <i class="fab fa-docker"></i>
+                        <span>Docker</span>
+                    </div>
+                    <div class="marquee-item">
+                        <i class="fab fa-aws"></i>
+                        <span>AWS</span>
+                    </div>
+                    <div class="marquee-item">
+                        <i class="fas fa-database"></i>
+                        <span>MongoDB</span>
                     </div>
                 </div>
             </div>
@@ -285,40 +448,6 @@
                 <button class="filter-btn" data-filter="automation">Automation</button>
             </div>
             <div class="projects-grid">
-                <div class="project-card scale-in stagger-1" data-category="frontend">
-                    <div class="project-image-container">
-                        <div class="project-image icon-image">
-                            <i class="fas fa-mountain"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="project-actions">
-                                <a href="https://github.com/oshockley/HillIfe" target="_blank" rel="noopener noreferrer" class="action-btn">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>HillIfe</h3>
-                            <div class="project-status">
-                                <span class="status-dot active"></span>
-                                <span class="status-text">Active</span>
-                            </div>
-                        </div>
-                        <p>A lifestyle and productivity app designed for outdoor enthusiasts. Features trip planning, activity tracking, and community sharing.</p>
-                        <div class="project-tags">
-                            <span class="tag">React Native</span>
-                            <span class="tag">Firebase</span>
-                            <span class="tag">Mobile</span>
-                        </div>
-                        <div class="project-stats">
-                            <div class="stat"><i class="fas fa-star"></i><span>5</span></div>
-                            <div class="stat"><i class="fas fa-code-branch"></i><span>2</span></div>
-                            <div class="stat"><i class="fas fa-eye"></i><span>60</span></div>
-                        </div>
-                    </div>
-                </div>
                 <div class="project-card scale-in stagger-2" data-category="fullstack">
                     <div class="project-image-container">
                         <div class="project-image icon-image">
@@ -326,6 +455,9 @@
                         </div>
                         <div class="project-overlay">
                             <div class="project-actions">
+                                <button class="action-btn" onclick="openProjectModal('sleeptracker')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
                                 <a href="https://github.com/oshockley/SleepTrackerPro" target="_blank" rel="noopener noreferrer" class="action-btn">
                                     <i class="fab fa-github"></i>
                                 </a>
@@ -340,7 +472,7 @@
                                 <span class="status-text">Active</span>
                             </div>
                         </div>
-                        <p>A comprehensive full-stack MERN application for sleep monitoring with advanced analytics, user authentication, and responsive dashboard. Features sleep pattern visualization and trend tracking.</p>
+                        <p data-translate="project-sleep-desc">A comprehensive full-stack MERN application for sleep monitoring with advanced analytics, user authentication, and responsive dashboard. Features sleep pattern visualization and trend tracking.</p>
                         <div class="project-tags">
                             <span class="tag">React</span>
                             <span class="tag">Node.js</span>
@@ -348,20 +480,33 @@
                             <span class="tag">Express</span>
                         </div>
                         <div class="project-stats">
-                            <div class="stat"><i class="fas fa-star"></i><span>1</span></div>
-                            <div class="stat"><i class="fas fa-code-branch"></i><span>2</span></div>
-                            <div class="stat"><i class="fas fa-eye"></i><span>45</span></div>
+                            <div class="stat">
+                                <i class="fas fa-star"></i>
+                                <span>1</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-code-branch"></i>
+                                <span>2</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-eye"></i>
+                                <span>45</span>
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="project-card scale-in stagger-3" data-category="frontend">
                     <div class="project-image-container">
                         <div class="project-image icon-image">
-                            <i class="fas fa-globe"></i>
+                            <i class="fas fa-tasks"></i>
                         </div>
                         <div class="project-overlay">
                             <div class="project-actions">
-                                <a href="https://github.com/oshockley/VantraOrbit" target="_blank" rel="noopener noreferrer" class="action-btn">
+                                <button class="action-btn" onclick="openProjectModal('taskmanager')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <a href="https://github.com/oshockley/Task-Manager-App" target="_blank" rel="noopener noreferrer" class="action-btn">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
@@ -369,40 +514,225 @@
                     </div>
                     <div class="project-content">
                         <div class="project-header">
-                            <h3>Vantra Orbit</h3>
+                            <h3>Task Manager App</h3>
                             <div class="project-status">
                                 <span class="status-dot active"></span>
                                 <span class="status-text">Active</span>
                             </div>
                         </div>
-                        <p>A web-based visualization tool for planetary orbits and space missions. Features interactive 3D graphics and real-time data integration.</p>
+                        <p data-translate="project-task-desc">A modern task management application built with HTML, CSS, and JavaScript. Features intuitive task creation, organization, and progress tracking with responsive design.</p>
                         <div class="project-tags">
-                            <span class="tag">Three.js</span>
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
                             <span class="tag">JavaScript</span>
-                            <span class="tag">WebGL</span>
+                            <span class="tag">Responsive</span>
                         </div>
                         <div class="project-stats">
-                            <div class="stat"><i class="fas fa-star"></i><span>3</span></div>
-                            <div class="stat"><i class="fas fa-code-branch"></i><span>1</span></div>
-                            <div class="stat"><i class="fas fa-eye"></i><span>28</span></div>
+                            <div class="stat">
+                                <i class="fas fa-star"></i>
+                                <span>3</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-code-branch"></i>
+                                <span>1</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-eye"></i>
+                                <span>28</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- View All Repos Card -->
-                <div class="project-card scale-in stagger-4 view-all-repos">
+
+                <div class="project-card scale-in stagger-4" data-category="frontend">
                     <div class="project-image-container">
                         <div class="project-image icon-image">
-                            <i class="fab fa-github"></i>
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="action-btn" onclick="openProjectModal('studyguide')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <a href="https://github.com/oshockley/prework-study-guide" target="_blank" rel="noopener noreferrer" class="action-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="project-content">
                         <div class="project-header">
-                            <h3>View All Repositories</h3>
+                            <h3>Prework Study Guide</h3>
+                            <div class="project-status">
+                                <span class="status-dot maintenance"></span>
+                                <span class="status-text">Complete</span>
+                            </div>
                         </div>
-                        <p>Explore my complete collection of projects, experiments, and collaborative work on GitHub.</p>
-                        <a href="https://github.com/oshockley" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-top:1rem;">
-                            <i class="fab fa-github"></i> Visit My GitHub
-                        </a>
+                        <p data-translate="project-study-desc">An interactive study guide web application featuring notes on HTML, CSS, Git, and JavaScript with dynamic topic selection and console interaction.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Education</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-star"></i>
+                                <span>2</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-code-branch"></i>
+                                <span>1</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-eye"></i>
+                                <span>19</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scale-in stagger-5" data-category="frontend">
+                    <div class="project-image-container">
+                        <div class="project-image icon-image">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="action-btn" onclick="openProjectModal('portfolio')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <a href="https://github.com/oshockley/Module-2-Portfolio" target="_blank" rel="noopener noreferrer" class="action-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Portfolio Website</h3>
+                            <div class="project-status">
+                                <span class="status-dot development"></span>
+                                <span class="status-text">Evolution</span>
+                            </div>
+                        </div>
+                        <p data-translate="project-portfolio-desc">Early portfolio website showcasing development progress and skills. Demonstrates growth in web design, responsive layouts, and professional presentation.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">Portfolio</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-star"></i>
+                                <span>1</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-code-branch"></i>
+                                <span>1</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-eye"></i>
+                                <span>15</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scale-in stagger-6" data-category="frontend">
+                    <div class="project-image-container">
+                        <div class="project-image icon-image">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="action-btn" onclick="openProjectModal('demo')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <a href="https://github.com/oshockley/first-day-demo" target="_blank" rel="noopener noreferrer" class="action-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Development Demos</h3>
+                            <div class="project-status">
+                                <span class="status-dot maintenance"></span>
+                                <span class="status-text">Archive</span>
+                            </div>
+                        </div>
+                        <p data-translate="project-demo-desc">Collection of early development exercises and demos showcasing fundamental programming concepts and progressive skill building.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">Learning</span>
+                            <span class="tag">Demos</span>
+                            <span class="tag">Basics</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-star"></i>
+                                <span>0</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-code-branch"></i>
+                                <span>1</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-eye"></i>
+                                <span>8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scale-in stagger-2" data-category="automation">
+                    <div class="project-image-container">
+                        <div class="project-image icon-image">
+                            <i class="fas fa-plus-circle"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="action-btn" onclick="openProjectModal('more')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <a href="https://github.com/oshockley" target="_blank" rel="noopener noreferrer" class="action-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>View All Projects</h3>
+                            <div class="project-status">
+                                <span class="status-dot active"></span>
+                                <span class="status-text">39+ Repos</span>
+                            </div>
+                        </div>
+                        <p data-translate="project-more-desc">Explore my complete collection of 39+ GitHub repositories including experiments, learning projects, and collaborative work showcasing continuous growth and development.</p>
+                        <div class="project-tags">
+                            <span class="tag">GitHub</span>
+                            <span class="tag">Open Source</span>
+                            <span class="tag">Various</span>
+                            <span class="tag">Exploration</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-star"></i>
+                                <span>6+</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-code-branch"></i>
+                                <span>39+</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-eye"></i>
+                                <span>200+</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -480,6 +810,100 @@
         </div>
     </section>
 
+    <!-- Latest GitHub Projects -->
+    <section id="github-projects" class="github-section">
+        <div class="container">
+            <h2 class="section-title fade-in">Latest from GitHub</h2>
+            <p class="section-subtitle">Real-time updates from my most recent work</p>
+            <div class="github-projects-grid" id="githubProjects">
+                <div class="github-loading">
+                    <div class="loader-spinner"></div>
+                    <p>Loading latest projects...</p>
+                </div>
+            </div>
+            <a href="https://github.com/oshockley" target="_blank" class="btn btn-primary cta-magnetic" style="margin-top: 2rem;">
+                <i class="fab fa-github"></i> View All Repositories
+            </a>
+        </div>
+    </section>
+
+    <!-- Code Showcase -->
+    <section id="code-showcase" class="code-showcase">
+        <div class="container">
+            <h2 class="section-title fade-in">Code Quality Showcase</h2>
+            <p class="section-subtitle">Clean, maintainable code examples from my projects</p>
+            <div class="code-examples">
+                <div class="code-card slide-in-left">
+                    <div class="code-header">
+                        <div class="code-language">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="code-actions">
+                            <button class="copy-code" onclick="copyCode('code1')">
+                                <i class="fas fa-copy"></i> Copy
+                            </button>
+                        </div>
+                    </div>
+                    <div class="code-title">Async Data Fetching with Error Handling</div>
+                    <pre class="code-block" id="code1"><code class="language-javascript">// Robust API call with retry logic
+async function fetchWithRetry(url, options = {}, retries = 3) {
+  for (let i = 0; i < retries; i++) {
+    try {
+      const response = await fetch(url, options);
+      
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}`);
+      }
+      
+      return await response.json();
+    } catch (error) {
+      if (i === retries - 1) throw error;
+      
+      // Exponential backoff
+      await new Promise(resolve => 
+        setTimeout(resolve, Math.pow(2, i) * 1000)
+      );
+    }
+  }
+}</code></pre>
+                </div>
+
+                <div class="code-card slide-in-right">
+                    <div class="code-header">
+                        <div class="code-language">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="code-actions">
+                            <button class="copy-code" onclick="copyCode('code2')">
+                                <i class="fas fa-copy"></i> Copy
+                            </button>
+                        </div>
+                    </div>
+                    <div class="code-title">Custom Hook for Debounced Search</div>
+                    <pre class="code-block" id="code2"><code class="language-javascript">// Optimized search with debouncing
+function useDebounce(value, delay = 500) {
+  const [debouncedValue, setDebouncedValue] = useState(value);
+
+  useEffect(() => {
+    const handler = setTimeout(() => {
+      setDebouncedValue(value);
+    }, delay);
+
+    return () => clearTimeout(handler);
+  }, [value, delay]);
+
+  return debouncedValue;
+}
+
+// Usage in component
+const searchTerm = useDebounce(inputValue, 500);</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="section-divider"></div>
@@ -526,6 +950,45 @@
                             <li data-translate="exp-item-3-3">Experience working with diverse teams and meeting challenging targets</li>
                             <li data-translate="exp-item-3-4">Customer-focused mindset that translates to user-centered software design</li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- High-Conversion CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-badge">
+                    <span class="status-dot-large"></span>
+                    <span>Available for New Projects</span>
+                </div>
+                <h2 class="cta-title">Let's Build Something Amazing Together</h2>
+                <p class="cta-description">
+                    I'm currently open to full-time opportunities, freelance projects, and collaborations. 
+                    Whether you need a developer for your team or have a project in mind, let's connect!
+                </p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary btn-lg cta-magnetic">
+                        <i class="fas fa-rocket"></i> Start a Project
+                    </a>
+                    <a href="resume.pdf" download class="btn btn-secondary btn-lg cta-magnetic">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+                <div class="cta-stats-mini">
+                    <div class="stat-mini">
+                        <i class="fas fa-check-circle"></i>
+                        <span>100% Client Satisfaction</span>
+                    </div>
+                    <div class="stat-mini">
+                        <i class="fas fa-clock"></i>
+                        <span>24hr Response Time</span>
+                    </div>
+                    <div class="stat-mini">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>NDA Available</span>
                     </div>
                 </div>
             </div>
@@ -605,20 +1068,11 @@
         <i class="fas fa-chevron-up"></i>
     </button>
 
-    <!-- Footer Wave Background -->
-    <div class="footer-wave-bg">
-        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:120px; display:block;">
-            <defs>
-                <linearGradient id="footerWaveGradient" x1="0" y1="0" x2="1440" y2="120" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#1e293b" />
-                    <stop offset="1" stop-color="#374151" />
-                </linearGradient>
-            </defs>
-            <path d="M0,40 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="url(#footerWaveGradient)"/>
-        </svg>
-    </div>
+    </main>
+    <!-- End Main Content -->
+
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
@@ -650,5 +1104,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="advanced-features.js"></script>
 </body>
 </html>
