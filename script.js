@@ -112,28 +112,29 @@ document.querySelectorAll('.nav-link').forEach(link => {
 const translations = {
     en: {
         'nav-home': 'Home',
+        'nav-services': 'Services',
         'nav-about': 'About',
         'nav-skills': 'Skills',
-        'nav-projects': 'Projects',
-        'nav-experience': 'Experience',
-        'nav-contact': 'Contact',
+        'nav-projects': 'Portfolio',
+        'nav-contact': 'Hire Me',
         'hero-greeting': 'Hi, I\'m',
-        'hero-title': 'Software Developer',
-        'hero-description': 'I craft innovative, user-focused software solutions that scale seamlessly and solve real-world problems. Committed to clean, maintainable code, exceptional user experience, and continuous growth as a developer.',
-        'btn-work': 'View My Work',
-        'btn-contact': 'Get In Touch',
-        'about-title': 'About Me',
-        'about-text-1': 'I\'m a passionate software developer with expertise in modern web technologies and a strong foundation in computer science principles. I enjoy tackling complex problems and turning ideas into functional, user-friendly applications.',
-        'about-text-2': 'My journey in software development has led me to work with various technologies and frameworks, always staying current with industry trends and best practices. I believe in writing clean, maintainable code and creating solutions that make a positive impact.',
-        'stat-experience': 'Years Experience',
+        'hero-title': 'Freelance Full Stack Developer',
+        'hero-description': 'I help businesses and entrepreneurs bring their ideas to life with custom web applications. Specializing in modern technologies, I deliver high-quality, scalable solutions that drive results and exceed expectations.',
+        'btn-work': 'Hire Me Now',
+        'btn-contact': 'View Services',
+        'about-title': 'Why Hire Me?',
+        'about-text-1': 'As a freelance full-stack developer, I partner with businesses and entrepreneurs to create custom web applications that drive growth. With expertise in modern technologies and a client-first approach, I deliver solutions that are not just functional, but exceptional in quality and user experience.',
+        'about-text-2': 'I specialize in JavaScript, React, Node.js, and full-stack development. Whether you need a new website, web application, or want to improve an existing project, I bring technical excellence, clear communication, and a commitment to delivering on time and within budget.',
+        'stat-experience': 'Client Satisfaction',
         'stat-projects': 'Projects Completed',
-        'stat-satisfaction': 'Client Satisfaction',
+        'stat-satisfaction': 'Average Response',
+        'services-title': 'Services I Offer',
         'skills-title': 'Technical Skills',
         'skill-frontend': 'Frontend Development',
         'skill-backend': 'Backend Development',
         'skill-database': 'Database & Cloud',
         'skill-tools': 'Tools & Other',
-        'projects-title': 'Featured Projects',
+        'projects-title': 'My Work Portfolio',
         'project-vantra-desc': 'An innovative orbital tracking and space management application designed to monitor satellite movements and space debris with real-time data visualization.',
         'project-planora-desc': 'A comprehensive planning and scheduling application that helps users organize their tasks, events, and goals with intelligent automation and intuitive design.',
         'project-hilllife-desc': 'A lifestyle and wellness platform focused on outdoor activities, hiking trails, and community building for outdoor enthusiasts and adventure seekers.',
@@ -163,9 +164,9 @@ const translations = {
         'exp-item-3-2': 'Created study guides and learning materials',
         'exp-item-3-3': 'Built functional web applications from scratch',
         'exp-item-3-4': 'Actively seeking opportunities to apply technical skills professionally',
-        'contact-title': 'Get In Touch',
-        'contact-heading': 'Let\'s Work Together',
-        'contact-text': 'I\'m always interested in new opportunities and exciting projects. Whether you\'re looking for a developer to join your team or need help with a specific project, I\'d love to hear from you.',
+        'contact-title': 'Let\'s Work Together',
+        'contact-heading': 'Ready to Start Your Project?',
+        'contact-text': 'I\'m available for freelance projects and ready to help bring your vision to life. Whether you need a complete web application, website redesign, or ongoing development support, let\'s discuss how I can help you achieve your goals.',
         'contact-email-label': 'Email',
         'contact-phone-label': 'Phone',
         'contact-location-label': 'Location',
@@ -173,17 +174,17 @@ const translations = {
         'form-email': 'Email',
         'form-subject': 'Subject',
         'form-message': 'Message',
-        'form-send': 'Send Message',
-        'footer-tagline': 'Software Developer passionate about creating innovative solutions.',
+        'form-send': 'Get Free Quote',
+        'footer-tagline': 'Freelance Full Stack Developer - Building exceptional web experiences.',
         'footer-copyright': '© 2025 O\'Neal Shockley. All rights reserved.'
     },
     es: {
         'nav-home': 'Inicio',
+        'nav-services': 'Servicios',
         'nav-about': 'Acerca de',
         'nav-skills': 'Habilidades',
-        'nav-projects': 'Proyectos',
-        'nav-experience': 'Experiencia',
-        'nav-contact': 'Contacto',
+        'nav-projects': 'Portafolio',
+        'nav-contact': 'Contrátame',
         'hero-greeting': 'Hola, soy',
         'hero-title': 'Desarrollador de Software',
         'hero-description': 'Creo soluciones de software innovadoras y centradas en el usuario que escalan perfectamente y resuelven problemas del mundo real. Comprometido con código limpio y mantenible, experiencia de usuario excepcional y crecimiento continuo como desarrollador.',
@@ -246,13 +247,13 @@ const translations = {
     },
     zh: {
         'nav-home': '首页',
+        'nav-services': '服务',
         'nav-about': '关于',
         'nav-skills': '技能',
-        'nav-projects': '项目',
-        'nav-experience': '经验',
-        'nav-contact': '联系',
+        'nav-projects': '作品集',
+        'nav-contact': '雇佣我',
         'hero-greeting': '你好，我是',
-        'hero-title': '软件开发者',
+        'hero-title': '自由全栈开发者',
         'hero-description': '我创建创新的、以用户为中心的软件解决方案，可无缝扩展并解决现实世界的问题。致力于清洁、可维护的代码、卓越的用户体验和作为开发者的持续成长。',
         'btn-work': '查看我的作品',
         'btn-contact': '联系我',
@@ -267,7 +268,7 @@ const translations = {
         'skill-backend': '后端开发',
         'skill-database': '数据库和云',
         'skill-tools': '工具和其他',
-        'projects-title': '精选项目',
+        'projects-title': '我的作品集',
         'project-vantra-desc': '一个创新的轨道跟踪和空间管理应用程序，旨在通过实时数据可视化监控卫星运动和太空碎片。',
         'project-planora-desc': '一个全面的规划和调度应用程序，帮助用户通过智能自动化和直观设计组织他们的任务、事件和目标。',
         'project-hilllife-desc': '一个专注于户外活动、远足径和社区建设的生活方式和健康平台，为户外爱好者和冒险寻求者服务。',
@@ -313,13 +314,13 @@ const translations = {
     },
     de: {
         'nav-home': 'Startseite',
+        'nav-services': 'Dienstleistungen',
         'nav-about': 'Über mich',
         'nav-skills': 'Fähigkeiten',
-        'nav-projects': 'Projekte',
-        'nav-experience': 'Erfahrung',
-        'nav-contact': 'Kontakt',
+        'nav-projects': 'Portfolio',
+        'nav-contact': 'Beauftragen',
         'hero-greeting': 'Hallo, ich bin',
-        'hero-title': 'Software-Entwickler',
+        'hero-title': 'Freiberuflicher Full-Stack-Entwickler',
         'hero-description': 'Ich entwickle innovative, benutzerorientierte Software-Lösungen, die nahtlos skalieren und reale Probleme lösen. Verpflichtet zu sauberem, wartbarem Code, außergewöhnlicher Benutzererfahrung und kontinuierlichem Wachstum als Entwickler.',
         'btn-work': 'Meine Arbeit ansehen',
         'btn-contact': 'Kontakt aufnehmen',
@@ -380,13 +381,13 @@ const translations = {
     },
     it: {
         'nav-home': 'Home',
+        'nav-services': 'Servizi',
         'nav-about': 'Chi sono',
         'nav-skills': 'Competenze',
-        'nav-projects': 'Progetti',
-        'nav-experience': 'Esperienza',
-        'nav-contact': 'Contatti',
+        'nav-projects': 'Portfolio',
+        'nav-contact': 'Assumi',
         'hero-greeting': 'Ciao, sono',
-        'hero-title': 'Sviluppatore Software',
+        'hero-title': 'Sviluppatore Full-Stack Freelance',
         'hero-description': 'Creo soluzioni software innovative e orientate all\'utente che scalano perfettamente e risolvono problemi del mondo reale. Impegnato per codice pulito e mantenibile, esperienza utente eccezionale e crescita continua come sviluppatore.',
         'btn-work': 'Vedi il mio lavoro',
         'btn-contact': 'Contattami',
@@ -447,13 +448,13 @@ const translations = {
     },
     fr: {
         'nav-home': 'Accueil',
+        'nav-services': 'Services',
         'nav-about': 'À propos',
         'nav-skills': 'Compétences',
-        'nav-projects': 'Projets',
-        'nav-experience': 'Expérience',
-        'nav-contact': 'Contact',
+        'nav-projects': 'Portfolio',
+        'nav-contact': 'Embaucher',
         'hero-greeting': 'Salut, je suis',
-        'hero-title': 'Développeur Logiciel',
+        'hero-title': 'Développeur Full-Stack Freelance',
         'hero-description': 'Je crée des solutions logicielles innovantes et centrées sur l\'utilisateur qui évoluent parfaitement et résolvent des problèmes du monde réel. Engagé pour un code propre et maintenable, une expérience utilisateur exceptionnelle et une croissance continue en tant que développeur.',
         'btn-work': 'Voir mon travail',
         'btn-contact': 'Me contacter',
@@ -1034,12 +1035,221 @@ function initProjectFilters() {
     });
 }
 
-// Project Modal (placeholder)
+// Project Modal System
+const projectData = {
+    sleeptracker: {
+        title: 'SleepTrackerPro',
+        subtitle: 'Full-Stack MERN Sleep Monitoring Application',
+        description: 'A comprehensive sleep tracking and health monitoring application built with the MERN stack. This project demonstrates full-stack development capabilities with a focus on data visualization and user experience.',
+        problem: 'Many people struggle to understand their sleep patterns and identify factors affecting their sleep quality. Existing solutions are either too complex or lack meaningful insights.',
+        solution: 'Built an intuitive application that makes sleep tracking effortless while providing actionable insights through data visualization and trend analysis.',
+        features: [
+            'Secure user authentication with JWT tokens',
+            'CRUD operations for sleep entries with MongoDB',
+            'Interactive data visualizations using Chart.js',
+            'Sleep quality scoring algorithm',
+            'Weekly and monthly trend analysis',
+            'Responsive design for mobile and desktop',
+            'RESTful API with Express.js',
+            'State management with React hooks'
+        ],
+        technologies: ['React', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Chart.js', 'CSS3', 'REST API'],
+        outcomes: [
+            'Fully functional CRUD application',
+            'Secure authentication system',
+            'Real-time data visualization',
+            'Mobile-responsive interface'
+        ],
+        github: 'https://github.com/oshockley/SleepTrackerPro',
+        image: 'fas fa-bed'
+    },
+    taskmanager: {
+        title: 'Task Manager Pro',
+        subtitle: 'Productivity-Focused Task Management Application',
+        description: 'A modern, responsive task management application built with vanilla JavaScript, showcasing strong fundamentals and clean code practices without framework dependencies.',
+        problem: 'Users need a simple, fast way to organize daily tasks without the bloat of complex project management tools.',
+        solution: 'Created a lightweight, intuitive task manager with essential features and lightning-fast performance using vanilla JavaScript.',
+        features: [
+            'Task creation, editing, and deletion',
+            'Priority levels (High, Medium, Low)',
+            'Due date tracking',
+            'Local storage for data persistence',
+            'Drag-and-drop task organization',
+            'Filter by status and priority',
+            'Mobile-first responsive design',
+            'Clean, accessible UI'
+        ],
+        technologies: ['HTML5', 'CSS3', 'JavaScript (ES6+)', 'Local Storage', 'Flexbox/Grid'],
+        outcomes: [
+            'Zero dependencies, pure vanilla JS',
+            'Fast, responsive performance',
+            'Intuitive user experience',
+            'Cross-browser compatible'
+        ],
+        github: 'https://github.com/oshockley/Task-Manager-App',
+        image: 'fas fa-tasks'
+    },
+    studyguide: {
+        title: 'Interactive Study Guide',
+        subtitle: 'Educational Web Application for Learning Fundamentals',
+        description: 'An interactive learning platform designed to help students master web development fundamentals through organized content and interactive features.',
+        problem: 'New developers need structured, easily accessible reference materials for learning web development basics.',
+        solution: 'Built an organized study guide with interactive elements that makes learning engaging and easy to navigate.',
+        features: [
+            'Structured content for HTML, CSS, JavaScript, and Git',
+            'Interactive console demonstrations',
+            'Random topic suggestion feature',
+            'Clean, readable typography',
+            'Code examples with syntax highlighting',
+            'Responsive layout for all devices',
+            'Accessible design following WCAG guidelines'
+        ],
+        technologies: ['HTML5', 'CSS3', 'JavaScript', 'Git'],
+        outcomes: [
+            'Comprehensive learning resource',
+            'Interactive learning experience',
+            'Mobile-accessible content',
+            'Clean, maintainable code'
+        ],
+        github: 'https://github.com/oshockley/prework-study-guide',
+        image: 'fas fa-graduation-cap'
+    },
+    portfolio: {
+        title: 'Professional Portfolio V1',
+        subtitle: 'Early Portfolio Demonstrating Growth',
+        description: 'My first professional portfolio website, showcasing the progression of my development skills and understanding of modern web design principles.',
+        problem: 'Need to present development work and skills in a professional, accessible format for potential employers and clients.',
+        solution: 'Designed and built a clean, responsive portfolio that showcases projects and skills effectively.',
+        features: [
+            'Responsive grid-based layout',
+            'CSS Flexbox and Grid implementation',
+            'Project showcase section',
+            'Skills presentation',
+            'Contact form integration',
+            'Mobile-optimized navigation',
+            'Clean, professional design'
+        ],
+        technologies: ['HTML5', 'CSS3', 'Responsive Design', 'CSS Grid', 'Flexbox'],
+        outcomes: [
+            'Professional online presence',
+            'Responsive across all devices',
+            'Clean, accessible code',
+            'Foundation for future iterations'
+        ],
+        github: 'https://github.com/oshockley/Module-2-Portfolio',
+        image: 'fas fa-briefcase'
+    },
+    demos: {
+        title: 'Development Exercises',
+        subtitle: 'Foundation Skills and Learning Projects',
+        description: 'Collection of early development exercises and demos that document my learning journey and progressive skill building in web development.',
+        problem: 'Learning web development requires consistent practice with fundamental concepts before tackling complex projects.',
+        solution: 'Created a series of focused exercises to master core concepts and build a strong foundation in HTML, CSS, and JavaScript.',
+        features: [
+            'HTML structure and semantics',
+            'CSS styling fundamentals',
+            'JavaScript basics and logic',
+            'DOM manipulation practice',
+            'Progressive complexity',
+            'Code comments and documentation'
+        ],
+        technologies: ['HTML', 'CSS', 'JavaScript Basics'],
+        outcomes: [
+            'Strong grasp of fundamentals',
+            'Problem-solving skills',
+            'Clean code practices',
+            'Foundation for advanced work'
+        ],
+        github: 'https://github.com/oshockley/first-day-demo',
+        image: 'fas fa-code'
+    }
+};
+
 function openProjectModal(projectId) {
-    // This would open a detailed project modal
-    // For now, we'll just show an alert
-    alert(`Opening detailed view for project: ${projectId}`);
+    const project = projectData[projectId];
+    if (!project) return;
+    
+    const modalContent = document.getElementById('modalContent');
+    modalContent.innerHTML = `
+        <div class="modal-header">
+            <div class="modal-icon">
+                <i class="${project.image}"></i>
+            </div>
+            <div>
+                <h2>${project.title}</h2>
+                <p class="modal-subtitle">${project.subtitle}</p>
+            </div>
+        </div>
+        
+        <div class="modal-body">
+            <div class="modal-section">
+                <h3><i class="fas fa-info-circle"></i> Project Overview</h3>
+                <p>${project.description}</p>
+            </div>
+            
+            <div class="modal-grid">
+                <div class="modal-section">
+                    <h3><i class="fas fa-exclamation-triangle"></i> The Challenge</h3>
+                    <p>${project.problem}</p>
+                </div>
+                
+                <div class="modal-section">
+                    <h3><i class="fas fa-lightbulb"></i> The Solution</h3>
+                    <p>${project.solution}</p>
+                </div>
+            </div>
+            
+            <div class="modal-section">
+                <h3><i class="fas fa-list-check"></i> Key Features</h3>
+                <ul class="feature-list">
+                    ${project.features.map(feature => `<li><i class="fas fa-check"></i> ${feature}</li>`).join('')}
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <h3><i class="fas fa-code"></i> Technologies Used</h3>
+                <div class="tech-tags">
+                    ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+                </div>
+            </div>
+            
+            <div class="modal-section">
+                <h3><i class="fas fa-trophy"></i> Project Outcomes</h3>
+                <ul class="outcome-list">
+                    ${project.outcomes.map(outcome => `<li><i class="fas fa-star"></i> ${outcome}</li>`).join('')}
+                </ul>
+            </div>
+        </div>
+        
+        <div class="modal-footer">
+            <a href="${project.github}" target="_blank" rel="noopener noreferrer" class="btn-modal-primary">
+                <i class="fab fa-github"></i> View Source Code
+            </a>
+            <button onclick="closeProjectModal()" class="btn-modal-secondary">
+                Close
+            </button>
+        </div>
+    `;
+    
+    const modal = document.getElementById('projectModal');
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
 }
+
+function closeProjectModal() {
+    const modal = document.getElementById('projectModal');
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+// Close modal on escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeProjectModal();
+    }
+});
+
+// Project Modal (old placeholder removed)
 
 // Testimonials Carousel
 function initTestimonialsCarousel() {

@@ -1,16 +1,18 @@
-# Oneal Shockleys - Software Developer Portfolio
+# O'Neal Shockley - Freelance Developer Portfolio
 
-A professional portfolio website showcasing my skills, projects, and experience as a software developer.
+A professional freelancer portfolio website showcasing my development services, skills, projects, and client testimonials.
 
 ## 🚀 Features
 
 - **Responsive Design**: Fully responsive layout that works on all devices
 - **Modern UI/UX**: Clean, professional design with smooth animations
+- **Services Section**: Detailed breakdown of freelance services offered
 - **Interactive Navigation**: Smooth scrolling navigation with active section highlighting
-- **Project Showcase**: Detailed project cards with technology stacks and live demo links
+- **Portfolio Showcase**: Detailed project cards with technology stacks and live demo links
 - **Skills Section**: Organized display of technical skills by category
-- **Experience Timeline**: Professional experience with detailed accomplishments
-- **Contact Form**: Functional contact form with validation
+- **Client Testimonials**: Social proof from satisfied clients
+- **Experience Timeline**: Professional background and expertise
+- **Conversion-Focused**: Multiple CTAs and optimized contact forms for client acquisition
 - **Performance Optimized**: Fast loading with optimized animations and scroll effects
 
 ## 🛠️ Technologies Used
@@ -20,25 +22,28 @@ A professional portfolio website showcasing my skills, projects, and experience 
 - **JavaScript**: Interactive functionality and animations
 - **Font Awesome**: Icons for enhanced visual appeal
 - **Google Fonts**: Professional typography with Inter font family
+- **Netlify Forms**: Contact form integration
 
 ## 📋 Sections
 
-1. **Hero Section**: Introduction with call-to-action buttons and social links
-2. **About**: Personal introduction with key statistics
-3. **Skills**: Technical skills organized by category (Frontend, Backend, Database & Cloud, Tools)
-4. **Projects**: Featured projects with descriptions, tech stacks, and links
-5. **Experience**: Professional timeline with achievements and responsibilities
-6. **Contact**: Contact information and functional contact form
+1. **Hero Section**: Introduction with strong CTA buttons and availability status
+2. **Services**: Comprehensive list of freelance services with detailed features
+3. **About**: Value proposition and reasons to hire
+4. **Skills**: Technical skills organized by category (Frontend, Backend, Tools)
+5. **Portfolio**: Featured projects with descriptions, tech stacks, and links
+6. **Testimonials**: Client testimonials and social proof
+7. **Experience**: Professional background and development journey
+8. **Contact**: Multiple contact methods and project inquiry form
 
-## 🎯 Key Features for Recruiters
+## 🎯 Key Features for Clients
 
-- **Clear Navigation**: Easy to find relevant information
-- **Skills Overview**: Quick assessment of technical capabilities
-- **Project Portfolio**: Real examples of work with live demos and source code
-- **Professional Experience**: Detailed work history with quantifiable achievements
-- **Contact Information**: Multiple ways to get in touch
-- **Responsive Design**: Accessible on any device
-- **Performance Metrics**: Showcased improvements and impact in previous roles
+- **Clear Service Offerings**: Easy to understand what services are provided
+- **Portfolio Evidence**: Real examples of work with live demos and source code
+- **Social Proof**: Testimonials from satisfied clients
+- **Multiple Contact Methods**: Email, phone, LinkedIn, and contact form
+- **Fast Response Promise**: 24-hour response time commitment
+- **Professional Presentation**: Clean, modern design that inspires confidence
+- **Free Consultation**: Low barrier to entry for potential clients
 
 ## 📱 Responsive Breakpoints
 
