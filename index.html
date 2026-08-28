@@ -7,36 +7,36 @@
     <meta name="keywords" content="Freelance Developer, Hire Developer, Full Stack Developer, JavaScript Developer, React Developer, Node.js Developer, Web Development Services, Freelance Web Developer">
     <meta name="author" content="O'Neal Shockley">
     <meta name="robots" content="index, follow">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://onealshockley.com/">
     <meta property="og:title" content="O'Neal Shockley - Freelance Software Developer for Hire">
     <meta property="og:description" content="Professional freelance full-stack developer ready to bring your ideas to life. Fast, reliable, and high-quality web development services.">
     <meta property="og:image" content="https://onealshockley.com/og-image.jpg">
-    
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://onealshockley.com/">
     <meta property="twitter:title" content="O'Neal Shockley - Freelance Software Developer">
     <meta property="twitter:description" content="Professional freelance full-stack developer. Transform your ideas into high-quality web applications. Available for hire!">
     <meta property="twitter:image" content="https://onealshockley.com/og-image.jpg">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    
+
     <title>O'Neal Shockley - Freelance Full Stack Developer | Hire Me for Your Next Project</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="advanced-styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
-    
+
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://api.github.com">
-    
+
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
@@ -56,7 +56,7 @@
 </head>
 <body>
     <!-- Skip to main content link for accessibility -->
-    
+
     <!-- Page Loader -->
     <div class="page-loader" id="pageLoader">
         <div class="loader-content">
@@ -76,10 +76,9 @@
             </div>
             <div class="nav-menu" id="nav-menu">
                 <a href="#home" class="nav-link" data-translate="nav-home">Home</a>
-                <a href="#services" class="nav-link" data-translate="nav-services">Services</a>
-                <a href="#about" class="nav-link" data-translate="nav-about">About</a>
+                <a href="#journey" class="nav-link">Journey</a>
                 <a href="#skills" class="nav-link" data-translate="nav-skills">Skills</a>
-                <a href="#projects" class="nav-link" data-translate="nav-projects">Portfolio</a>
+                <a href="#projects" class="nav-link" data-translate="nav-projects">Work</a>
                 <a href="#contact" class="nav-link" data-translate="nav-contact">Hire Me</a>
                 <div class="language-selector">
                     <select id="language-select" class="language-dropdown">
@@ -115,7 +114,7 @@
                 </p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary pulse-animation" data-translate="btn-work">Hire Me Now</a>
-                    <a href="#services" class="btn btn-secondary" data-translate="btn-contact">View Services</a>
+                    <a href="#journey" class="btn btn-secondary" data-translate="btn-contact">See My Journey</a>
                     <a href="#projects" class="btn btn-outline">
                         <i class="fas fa-briefcase"></i> See Portfolio
                     </a>
@@ -158,6 +157,7 @@
             </div>
         </div>
         <div class="scroll-indicator">
+            <span class="scroll-hint">Begin the journey</span>
             <div class="scroll-arrow">
                 <i class="fas fa-chevron-down"></i>
             </div>
@@ -166,156 +166,11 @@
 
     <!-- Main Content -->
     <main id="main-content">
-    
-    <!-- Services Section -->
-    <section id="services" class="services" role="region" aria-label="Services offered">
-        <div class="container">
-            <h2 class="section-title fade-in" data-translate="services-title">Services I Offer</h2>
-            <p class="section-subtitle fade-in stagger-1">Professional web development solutions tailored to your needs</p>
-            <div class="services-grid">
-                <div class="service-card scale-in stagger-2">
-                    <div class="service-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3>Full Stack Development</h3>
-                    <p>Complete web application development from front-end to back-end. I build scalable, responsive applications using React, Node.js, and modern databases.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Custom web applications</li>
-                        <li><i class="fas fa-check"></i> RESTful API development</li>
-                        <li><i class="fas fa-check"></i> Database design & integration</li>
-                        <li><i class="fas fa-check"></i> Responsive design</li>
-                    </ul>
-                </div>
-                
-                <div class="service-card scale-in stagger-3">
-                    <div class="service-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Frontend Development</h3>
-                    <p>Beautiful, performant user interfaces that work flawlessly across all devices. Specializing in React, Vue.js, and modern CSS frameworks.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> React & Vue.js applications</li>
-                        <li><i class="fas fa-check"></i> Responsive web design</li>
-                        <li><i class="fas fa-check"></i> UI/UX implementation</li>
-                        <li><i class="fas fa-check"></i> Performance optimization</li>
-                    </ul>
-                </div>
-                
-                <div class="service-card scale-in stagger-4">
-                    <div class="service-icon">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h3>Backend Development</h3>
-                    <p>Robust server-side solutions with secure APIs and efficient database management. Expert in Node.js, Express, MongoDB, and PostgreSQL.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> RESTful API development</li>
-                        <li><i class="fas fa-check"></i> Database architecture</li>
-                        <li><i class="fas fa-check"></i> Authentication & security</li>
-                        <li><i class="fas fa-check"></i> Server deployment</li>
-                    </ul>
-                </div>
-                
-                <div class="service-card scale-in stagger-5">
-                    <div class="service-icon">
-                        <i class="fas fa-sync-alt"></i>
-                    </div>
-                    <h3>Website Maintenance</h3>
-                    <p>Keep your website running smoothly with regular updates, bug fixes, and performance improvements. Ongoing support for peace of mind.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Regular updates & patches</li>
-                        <li><i class="fas fa-check"></i> Bug fixing & testing</li>
-                        <li><i class="fas fa-check"></i> Performance monitoring</li>
-                        <li><i class="fas fa-check"></i> Technical support</li>
-                    </ul>
-                </div>
-                
-                <div class="service-card scale-in stagger-6">
-                    <div class="service-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h3>Web Optimization</h3>
-                    <p>Improve your existing website's speed, SEO, and user experience. I analyze and optimize for maximum performance and conversions.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Speed optimization</li>
-                        <li><i class="fas fa-check"></i> SEO improvements</li>
-                        <li><i class="fas fa-check"></i> Code refactoring</li>
-                        <li><i class="fas fa-check"></i> Accessibility compliance</li>
-                    </ul>
-                </div>
-                
-                <div class="service-card scale-in stagger-7">
-                    <div class="service-icon">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <h3>Consulting & Support</h3>
-                    <p>Need technical guidance? I provide expert consultation on architecture, technology choices, and development best practices.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Technical consultation</li>
-                        <li><i class="fas fa-check"></i> Code reviews</li>
-                        <li><i class="fas fa-check"></i> Architecture planning</li>
-                        <li><i class="fas fa-check"></i> Team training</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="services-cta fade-in stagger-8">
-                <h3>Not sure what you need?</h3>
-                <p>Let's discuss your project and find the perfect solution together.</p>
-                <a href="#contact" class="btn btn-primary btn-lg">
-                    <i class="fas fa-comments"></i> Get Free Consultation
-                </a>
-            </div>
-        </div>
-    </section>
-    
-    <!-- About Section -->
-    <section id="about" class="about" role="region" aria-label="About me">
-        <div class="section-divider"></div>
-        <div class="container">
-            <h2 class="section-title fade-in" data-translate="about-title">Why Hire Me?</h2>
-            <div class="about-content">
-                <div class="about-text slide-in-left">
-                    <p class="fade-in stagger-1" data-translate="about-text-1">
-                        As a freelance full-stack developer, I partner with businesses and entrepreneurs 
-                        to create custom web applications that drive growth. With expertise in modern 
-                        technologies and a client-first approach, I deliver solutions that are not just 
-                        functional, but exceptional in quality and user experience.
-                    </p>
-                    <p class="fade-in stagger-2" data-translate="about-text-2">
-                        Certified in Software Engineering from the University of California, Irvine, 
-                        I specialize in JavaScript, React, Node.js, and full-stack development. Whether 
-                        you need a new website, web application, or want to improve an existing project, 
-                        I bring technical excellence, clear communication, and a commitment to delivering 
-                        on time and within budget.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat scale-in stagger-3">
-                            <h3>100%</h3>
-                            <p data-translate="stat-experience">Client Satisfaction</p>
-                        </div>
-                        <div class="stat scale-in stagger-4">
-                            <h3>39+</h3>
-                            <p data-translate="stat-projects">Projects Completed</p>
-                        </div>
-                        <div class="stat scale-in stagger-5">
-                            <h3>24hrs</h3>
-                            <p data-translate="stat-satisfaction">Average Response</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image slide-in-right">
-                    <div class="about-placeholder">
-                        <i class="fas fa-code"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Tech Stack Marquee -->
     <section class="tech-marquee-section">
         <div class="container">
-            <h3 class="marquee-title">Technologies I Work With</h3>
+            <h3 class="marquee-title">Technologies Along the Way</h3>
             <div class="marquee-container">
                 <div class="marquee-content">
                     <div class="marquee-item">
@@ -404,619 +259,668 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="section-divider"></div>
+    <!-- The Journey -->
+    <section id="journey" class="journey" role="region" aria-label="My journey">
         <div class="container">
-            <h2 class="section-title fade-in" data-translate="skills-title">Technical Skills</h2>
-            <div class="skills-navigation fade-in stagger-1">
-                <button class="skill-tab active" data-category="all">All Skills</button>
-                <button class="skill-tab" data-category="frontend">Frontend</button>
-                <button class="skill-tab" data-category="backend">Backend</button>
-                <button class="skill-tab" data-category="tools">Tools</button>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-category slide-in-left stagger-2" data-category="frontend">
-                    <h3 data-translate="skill-frontend">Frontend Development</h3>
-                    <div class="skill-items">
-                        <div class="skill-item" data-level="90">
-                            <span class="skill-name">JavaScript</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-level="85">
-                            <span class="skill-name">React</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-level="95">
-                            <span class="skill-name">HTML5</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-level="90">
-                            <span class="skill-name">CSS3</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-level="80">
-                            <span class="skill-name">Vue.js</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-level="85">
-                            <span class="skill-name">TypeScript</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category slide-in-right stagger-3" data-category="backend">
-                    <h3 data-translate="skill-backend">Backend Development</h3>
-                    <div class="skill-items">
-                        <div class="skill-item" data-level="85">
-                            <span class="skill-name">Node.js</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-level="80">
-                            <span class="skill-name">Python</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-level="75">
-                            <span class="skill-name">Express.js</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-level="70">
-                            <span class="skill-name">MongoDB</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 70%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-level="75">
-                            <span class="skill-name">PostgreSQL</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category slide-in-left stagger-4" data-category="tools">
-                    <h3 data-translate="skill-tools">Tools & Other</h3>
-                    <div class="skill-items">
-                        <div class="skill-item" data-level="90">
-                            <span class="skill-name">Git</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-level="85">
-                            <span class="skill-name">VS Code</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-level="75">
-                            <span class="skill-name">Docker</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-level="80">
-                            <span class="skill-name">AWS</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-level="85">
-                            <span class="skill-name">Figma</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h2 class="section-title fade-in">My Journey</h2>
+            <p class="section-subtitle fade-in stagger-1">From client-first sales to full-stack software — how I got here, one chapter at a time.</p>
         </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="section-divider"></div>
-        <div class="container">
-            <h2 class="section-title fade-in" data-translate="projects-title">My Work Portfolio</h2>
-            <div class="project-filters fade-in stagger-1">
-                <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="frontend">Frontend</button>
-                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
-                <button class="filter-btn" data-filter="automation">Automation</button>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card scale-in stagger-2" data-category="fullstack">
-                    <div class="project-image-container">
-                        <div class="project-image icon-image">
-                            <i class="fas fa-bed"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="project-actions">
-                                <button class="action-btn view-details" onclick="openProjectModal('sleeptracker')" title="View Details">
-                                    <i class="fas fa-expand"></i> View Details
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>SleepTrackerPro</h3>
-                            <div class="project-status">
-                                <span class="status-dot active"></span>
-                                <span class="status-text">Production</span>
-                            </div>
-                        </div>
-                        <div class="project-type">
-                            <i class="fas fa-briefcase"></i>
-                            <span>Full-Stack Web Application</span>
-                        </div>
-                        <p data-translate="project-sleep-desc">A comprehensive sleep monitoring application built with the MERN stack. Features include user authentication, sleep pattern visualization, advanced analytics dashboard, and personalized insights to help users improve their sleep quality.</p>
-                        
-                        <div class="project-outcomes">
-                            <h4><i class="fas fa-check-circle"></i> Key Outcomes</h4>
-                            <ul>
-                                <li>Full-featured CRUD operations with MongoDB</li>
-                                <li>Secure JWT authentication system</li>
-                                <li>Interactive data visualizations with Chart.js</li>
-                                <li>Responsive design for all devices</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="project-tags">
-                            <span class="tag"><i class="fab fa-react"></i> React</span>
-                            <span class="tag"><i class="fab fa-node"></i> Node.js</span>
-                            <span class="tag"><i class="fas fa-database"></i> MongoDB</span>
-                            <span class="tag"><i class="fas fa-server"></i> Express</span>
-                        </div>
-                        
-                        <div class="project-footer">
-                            <a href="https://github.com/oshockley/SleepTrackerPro" target="_blank" rel="noopener noreferrer" class="btn-secondary-sm">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                            <button onclick="openProjectModal('sleeptracker')" class="btn-primary-sm">
-                                <i class="fas fa-info-circle"></i> Learn More
-                            </button>
-                        </div>
-                    </div>
-                </div>
+        <div class="journey-path">
+            <div class="journey-track"></div>
+            <div class="journey-fill" id="journeyFill"></div>
 
-                <div class="project-card scale-in stagger-3" data-category="frontend">
-                    <div class="project-image-container">
-                        <div class="project-image icon-image">
-                            <i class="fas fa-tasks"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="project-actions">
-                                <button class="action-btn view-details" onclick="openProjectModal('taskmanager')" title="View Details">
-                                    <i class="fas fa-expand"></i> View Details
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>Task Manager Pro</h3>
-                            <div class="project-status">
-                                <span class="status-dot active"></span>
-                                <span class="status-text">Production</span>
-                            </div>
-                        </div>
-                        <div class="project-type">
-                            <i class="fas fa-mobile-alt"></i>
-                            <span>Responsive Web Application</span>
-                        </div>
-                        <p data-translate="project-task-desc">A productivity-focused task management application with clean UI and intuitive workflows. Built with vanilla JavaScript to demonstrate strong fundamentals without framework dependencies.</p>
-                        
-                        <div class="project-outcomes">
-                            <h4><i class="fas fa-check-circle"></i> Key Features</h4>
-                            <ul>
-                                <li>Local storage for data persistence</li>
-                                <li>Drag-and-drop task organization</li>
-                                <li>Priority levels and due dates</li>
-                                <li>Mobile-first responsive design</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="project-tags">
-                            <span class="tag"><i class="fab fa-html5"></i> HTML5</span>
-                            <span class="tag"><i class="fab fa-css3-alt"></i> CSS3</span>
-                            <span class="tag"><i class="fab fa-js"></i> JavaScript</span>
-                            <span class="tag"><i class="fas fa-mobile-alt"></i> Responsive</span>
-                        </div>
-                        
-                        <div class="project-footer">
-                            <a href="https://github.com/oshockley/Task-Manager-App" target="_blank" rel="noopener noreferrer" class="btn-secondary-sm">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                            <button onclick="openProjectModal('taskmanager')" class="btn-primary-sm">
-                                <i class="fas fa-info-circle"></i> Learn More
-                            </button>
-                        </div>
-                    </div>
+            <!-- Chapter 1 -->
+            <article class="chapter" data-chapter="1">
+                <div class="chapter-marker"><span>01</span></div>
+                <div class="chapter-body">
+                    <span class="chapter-eyebrow">2020 &mdash; 2023</span>
+                    <h3 class="chapter-title">The Spark</h3>
+                    <h4 class="chapter-role">Sales &amp; Client Relations</h4>
+                    <p>Built a strong foundation in client communication, project management, and exceeding expectations. These skills now enhance my freelance development services with superior client experience.</p>
+                    <ul class="chapter-points">
+                        <li>Expert client communication and requirement gathering</li>
+                        <li>Proven track record of exceeding targets and client expectations</li>
+                        <li>Strong project management and deadline-focused delivery</li>
+                        <li>Client-first mindset that ensures satisfaction and long-term partnerships</li>
+                    </ul>
                 </div>
+            </article>
 
-                <div class="project-card scale-in stagger-4" data-category="frontend">
-                    <div class="project-image-container">
-                        <div class="project-image icon-image">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="project-actions">
-                                <button class="action-btn view-details" onclick="openProjectModal('studyguide')" title="View Details">
-                                    <i class="fas fa-expand"></i> View Details
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>Interactive Study Guide</h3>
-                            <div class="project-status">
-                                <span class="status-dot maintenance"></span>
-                                <span class="status-text">Complete</span>
-                            </div>
-                        </div>
-                        <div class="project-type">
-                            <i class="fas fa-book-reader"></i>
-                            <span>Educational Web App</span>
-                        </div>
-                        <p data-translate="project-study-desc">An educational web application designed to help learners master web development fundamentals. Features organized content sections, interactive elements, and console-based learning activities.</p>
-                        
-                        <div class="project-outcomes">
-                            <h4><i class="fas fa-check-circle"></i> Key Features</h4>
-                            <ul>
-                                <li>Structured learning content for HTML/CSS/JS</li>
-                                <li>Interactive console demonstrations</li>
-                                <li>Clean, accessible design</li>
-                                <li>Random topic suggestion feature</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="project-tags">
-                            <span class="tag"><i class="fab fa-html5"></i> HTML</span>
-                            <span class="tag"><i class="fab fa-css3-alt"></i> CSS</span>
-                            <span class="tag"><i class="fab fa-js"></i> JavaScript</span>
-                            <span class="tag"><i class="fas fa-graduation-cap"></i> Education</span>
-                        </div>
-                        
-                        <div class="project-footer">
-                            <a href="https://github.com/oshockley/prework-study-guide" target="_blank" rel="noopener noreferrer" class="btn-secondary-sm">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                            <button onclick="openProjectModal('studyguide')" class="btn-primary-sm">
-                                <i class="fas fa-info-circle"></i> Learn More
-                            </button>
-                        </div>
-                    </div>
-                </div>
+            <!-- Chapter 2 -->
+            <article class="chapter" data-chapter="2">
+                <div class="chapter-marker"><span>02</span></div>
+                <div class="chapter-body">
+                    <span class="chapter-eyebrow">2023 &mdash; 2024</span>
+                    <h3 class="chapter-title">The Craft</h3>
+                    <h4 class="chapter-role">Software Engineering Certification &middot; UC Irvine</h4>
+                    <p>Earned a Software Engineering certification through a comprehensive program at UC Irvine. Gained hands-on experience developing numerous solo and team projects using industry-standard technologies and best practices.</p>
+                    <ul class="chapter-points">
+                        <li>Completed intensive Software Engineering certification program at UC Irvine</li>
+                        <li>Developed numerous solo and collaborative team projects from concept to deployment</li>
+                        <li>Mastered full-stack development, Git workflows, and software engineering principles</li>
+                        <li>Built strong foundation in data structures, algorithms, and scalable architecture</li>
+                    </ul>
 
-                <div class="project-card scale-in stagger-5" data-category="frontend">
-                    <div class="project-image-container">
-                        <div class="project-image icon-image">
-                            <i class="fas fa-briefcase"></i>
+                    <div class="waypoint" id="skills">
+                        <h4 class="waypoint-heading"><i class="fas fa-code-branch"></i> Skills I Built Here</h4>
+                        <div class="skills-navigation fade-in stagger-1">
+                            <button class="skill-tab active" data-category="all">All Skills</button>
+                            <button class="skill-tab" data-category="frontend">Frontend</button>
+                            <button class="skill-tab" data-category="backend">Backend</button>
+                            <button class="skill-tab" data-category="tools">Tools</button>
                         </div>
-                        <div class="project-overlay">
-                            <div class="project-actions">
-                                <button class="action-btn view-details" onclick="openProjectModal('portfolio')" title="View Details">
-                                    <i class="fas fa-expand"></i> View Details
-                                </button>
+                        <div class="skills-grid">
+                            <div class="skill-category slide-in-left stagger-2" data-category="frontend">
+                                <h3 data-translate="skill-frontend">Frontend Development</h3>
+                                <div class="skill-items">
+                                    <div class="skill-item" data-level="90">
+                                        <span class="skill-name">JavaScript</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="85">
+                                        <span class="skill-name">React</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="95">
+                                        <span class="skill-name">HTML5</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 95%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="90">
+                                        <span class="skill-name">CSS3</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="80">
+                                        <span class="skill-name">Vue.js</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="85">
+                                        <span class="skill-name">TypeScript</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-category slide-in-right stagger-3" data-category="backend">
+                                <h3 data-translate="skill-backend">Backend Development</h3>
+                                <div class="skill-items">
+                                    <div class="skill-item" data-level="85">
+                                        <span class="skill-name">Node.js</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="80">
+                                        <span class="skill-name">Python</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="75">
+                                        <span class="skill-name">Express.js</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="70">
+                                        <span class="skill-name">MongoDB</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 70%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="75">
+                                        <span class="skill-name">PostgreSQL</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-category slide-in-left stagger-4" data-category="tools">
+                                <h3 data-translate="skill-tools">Tools &amp; Other</h3>
+                                <div class="skill-items">
+                                    <div class="skill-item" data-level="90">
+                                        <span class="skill-name">Git</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="85">
+                                        <span class="skill-name">VS Code</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="75">
+                                        <span class="skill-name">Docker</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="80">
+                                        <span class="skill-name">AWS</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="85">
+                                        <span class="skill-name">Figma</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>Professional Portfolio V1</h3>
-                            <div class="project-status">
-                                <span class="status-dot development"></span>
-                                <span class="status-text">Evolved</span>
-                            </div>
-                        </div>
-                        <div class="project-type">
-                            <i class="fas fa-palette"></i>
-                            <span>Portfolio Website</span>
-                        </div>
-                        <p data-translate="project-portfolio-desc">Early portfolio demonstrating growth in web design and development. Shows progression in creating professional, responsive layouts and implementing modern design patterns.</p>
-                        
-                        <div class="project-outcomes">
-                            <h4><i class="fas fa-check-circle"></i> Skills Demonstrated</h4>
-                            <ul>
-                                <li>Responsive grid-based layout</li>
-                                <li>CSS Flexbox & Grid mastery</li>
-                                <li>Professional design principles</li>
-                                <li>Cross-browser compatibility</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="project-tags">
-                            <span class="tag"><i class="fab fa-html5"></i> HTML5</span>
-                            <span class="tag"><i class="fab fa-css3-alt"></i> CSS3</span>
-                            <span class="tag"><i class="fas fa-palette"></i> Portfolio</span>
-                            <span class="tag"><i class="fas fa-mobile-alt"></i> Responsive</span>
-                        </div>
-                        
-                        <div class="project-footer">
-                            <a href="https://github.com/oshockley/Module-2-Portfolio" target="_blank" rel="noopener noreferrer" class="btn-secondary-sm">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                            <button onclick="openProjectModal('portfolio')" class="btn-primary-sm">
-                                <i class="fas fa-info-circle"></i> Learn More
-                            </button>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="project-card scale-in stagger-6" data-category="frontend">
-                    <div class="project-image-container">
-                        <div class="project-image icon-image">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="project-actions">
-                                <button class="action-btn view-details" onclick="openProjectModal('demos')" title="View Details">
-                                    <i class="fas fa-expand"></i> View Details
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>Development Exercises</h3>
-                            <div class="project-status">
-                                <span class="status-dot maintenance"></span>
-                                <span class="status-text">Archive</span>
-                            </div>
-                        </div>
-                        <div class="project-type">
-                            <i class="fas fa-flask"></i>
-                            <span>Learning Projects</span>
-                        </div>
-                        <p data-translate="project-demo-desc">Collection of early development exercises demonstrating fundamental programming concepts and progressive skill building from the ground up.</p>
-                        
-                        <div class="project-outcomes">
-                            <h4><i class="fas fa-check-circle"></i> Foundation Skills</h4>
-                            <ul>
-                                <li>Core HTML/CSS fundamentals</li>
-                                <li>JavaScript basics and logic</li>
-                                <li>Problem-solving approach</li>
-                                <li>Progressive learning track</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="project-tags">
-                            <span class="tag"><i class="fab fa-html5"></i> HTML</span>
-                            <span class="tag"><i class="fas fa-book"></i> Learning</span>
-                            <span class="tag"><i class="fas fa-flask"></i> Demos</span>
-                            <span class="tag"><i class="fas fa-code"></i> Basics</span>
-                        </div>
-                        
-                        <div class="project-footer">
-                            <a href="https://github.com/oshockley/first-day-demo" target="_blank" rel="noopener noreferrer" class="btn-secondary-sm">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                            <button onclick="openProjectModal('demos')" class="btn-primary-sm">
-                                <i class="fas fa-info-circle"></i> Learn More
-                            </button>
-                        </div>
-                    </div>
-                </div>
+                    <div class="waypoint" id="projects-early">
+                        <h4 class="waypoint-heading"><i class="fas fa-flask"></i> Early Builds</h4>
+                        <div class="projects-grid waypoint-grid">
+                            <div class="project-card scale-in stagger-2" data-category="frontend">
+                                <div class="project-image-container">
+                                    <div class="project-image icon-image">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </div>
+                                    <div class="project-overlay">
+                                        <div class="project-actions">
+                                            <button class="action-btn view-details" onclick="openProjectModal('studyguide')" title="View Details">
+                                                <i class="fas fa-expand"></i> View Details
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <div class="project-header">
+                                        <h3>Interactive Study Guide</h3>
+                                        <div class="project-status">
+                                            <span class="status-dot maintenance"></span>
+                                            <span class="status-text">Complete</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-type">
+                                        <i class="fas fa-book-reader"></i>
+                                        <span>Educational Web App</span>
+                                    </div>
+                                    <p data-translate="project-study-desc">An educational web application designed to help learners master web development fundamentals. Features organized content sections, interactive elements, and console-based learning activities.</p>
 
-                <div class="project-card scale-in stagger-2" data-category="automation">
-                    <div class="project-image-container">
-                        <div class="project-image icon-image">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="project-actions">
-                                <a href="https://github.com/oshockley" target="_blank" rel="noopener noreferrer" class="action-btn view-details">
-                                    <i class="fab fa-github"></i> Visit GitHub
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>Complete Portfolio</h3>
-                            <div class="project-status">
-                                <span class="status-dot active"></span>
-                                <span class="status-text">39+ Repos</span>
-                            </div>
-                        </div>
-                        <div class="project-type">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub Repository Collection</span>
-                        </div>
-                        <p data-translate="project-more-desc">Explore my complete collection of 39+ GitHub repositories showcasing continuous growth, diverse projects, and commitment to learning. Includes experiments, production applications, and collaborative work.</p>
-                        
-                        <div class="project-outcomes">
-                            <h4><i class="fas fa-chart-line"></i> Portfolio Highlights</h4>
-                            <ul>
-                                <li>39+ public repositories</li>
-                                <li>Full-stack applications</li>
-                                <li>Open-source contributions</li>
-                                <li>Continuous development activity</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="project-tags">
-                            <span class="tag"><i class="fab fa-github"></i> GitHub</span>
-                            <span class="tag"><i class="fas fa-code-branch"></i> Open Source</span>
-                            <span class="tag"><i class="fas fa-layer-group"></i> Various</span>
-                            <span class="tag"><i class="fas fa-rocket"></i> Growing</span>
-                        </div>
-                        
-                        <div class="project-footer">
-                            <a href="https://github.com/oshockley" target="_blank" rel="noopener noreferrer" class="btn-primary-sm full-width">
-                                <i class="fab fa-github"></i> Explore All Projects
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                                    <div class="project-outcomes">
+                                        <h4><i class="fas fa-check-circle"></i> Key Features</h4>
+                                        <ul>
+                                            <li>Structured learning content for HTML/CSS/JS</li>
+                                            <li>Interactive console demonstrations</li>
+                                            <li>Clean, accessible design</li>
+                                            <li>Random topic suggestion feature</li>
+                                        </ul>
+                                    </div>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2 class="section-title" data-translate="testimonials-title">What People Say</h2>
-            <div class="testimonials-carousel">
-                <div class="testimonial-card active">
-                    <div class="testimonial-content">
-                        <div class="quote-icon">
-                            <i class="fas fa-quote-left"></i>
-                        </div>
-                        <p>"O'Neal demonstrated exceptional problem-solving skills and a strong understanding of modern web technologies. His dedication to learning and growing as a developer is truly impressive."</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="author-info">
-                                <h4>Sarah Johnson</h4>
-                                <span>Tech Lead at Innovation Labs</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <div class="quote-icon">
-                            <i class="fas fa-quote-left"></i>
-                        </div>
-                        <p>"Working with O'Neal on collaborative projects has been a pleasure. He brings fresh perspectives and shows great attention to detail in his code quality and documentation."</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="author-info">
-                                <h4>Marcus Thompson</h4>
-                                <span>Senior Developer at CodeCraft</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <div class="quote-icon">
-                            <i class="fas fa-quote-left"></i>
-                        </div>
-                        <p>"O'Neal's enthusiasm for learning and his ability to quickly adapt to new technologies make him a valuable team member. His projects show creativity and technical competence."</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="author-info">
-                                <h4>Emily Chen</h4>
-                                <span>Project Manager at TechForward</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-controls">
-                <button class="testimonial-btn active" data-slide="0">
-                    <span class="sr-only">Testimonial 1</span>
-                </button>
-                <button class="testimonial-btn" data-slide="1">
-                    <span class="sr-only">Testimonial 2</span>
-                </button>
-                <button class="testimonial-btn" data-slide="2">
-                    <span class="sr-only">Testimonial 3</span>
-                </button>
-            </div>
-        </div>
-    </section>
+                                    <div class="project-tags">
+                                        <span class="tag"><i class="fab fa-html5"></i> HTML</span>
+                                        <span class="tag"><i class="fab fa-css3-alt"></i> CSS</span>
+                                        <span class="tag"><i class="fab fa-js"></i> JavaScript</span>
+                                        <span class="tag"><i class="fas fa-graduation-cap"></i> Education</span>
+                                    </div>
 
-    <!-- Latest GitHub Projects -->
-    <section id="github-projects" class="github-section">
-        <div class="container">
-            <h2 class="section-title fade-in">Latest from GitHub</h2>
-            <p class="section-subtitle">Real-time updates from my most recent work</p>
-            <div class="github-projects-grid" id="githubProjects">
-                <div class="github-loading">
-                    <div class="loader-spinner"></div>
-                    <p>Loading latest projects...</p>
-                </div>
-            </div>
-            <a href="https://github.com/oshockley" target="_blank" class="btn btn-primary cta-magnetic" style="margin-top: 2rem;">
-                <i class="fab fa-github"></i> View All Repositories
-            </a>
-        </div>
-    </section>
+                                    <div class="project-footer">
+                                        <a href="https://github.com/oshockley/prework-study-guide" target="_blank" rel="noopener noreferrer" class="btn-secondary-sm">
+                                            <i class="fab fa-github"></i> View Code
+                                        </a>
+                                        <button onclick="openProjectModal('studyguide')" class="btn-primary-sm">
+                                            <i class="fas fa-info-circle"></i> Learn More
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
 
-    <!-- Code Showcase -->
-    <section id="code-showcase" class="code-showcase">
-        <div class="container">
-            <h2 class="section-title fade-in">Code Quality Showcase</h2>
-            <p class="section-subtitle">Clean, maintainable code examples from my projects</p>
-            <div class="code-examples">
-                <div class="code-card slide-in-left">
-                    <div class="code-header">
-                        <div class="code-language">
-                            <i class="fab fa-js"></i>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="code-actions">
-                            <button class="copy-code" onclick="copyCode('code1')">
-                                <i class="fas fa-copy"></i> Copy
-                            </button>
+                            <div class="project-card scale-in stagger-3" data-category="frontend">
+                                <div class="project-image-container">
+                                    <div class="project-image icon-image">
+                                        <i class="fas fa-briefcase"></i>
+                                    </div>
+                                    <div class="project-overlay">
+                                        <div class="project-actions">
+                                            <button class="action-btn view-details" onclick="openProjectModal('portfolio')" title="View Details">
+                                                <i class="fas fa-expand"></i> View Details
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <div class="project-header">
+                                        <h3>Professional Portfolio V1</h3>
+                                        <div class="project-status">
+                                            <span class="status-dot development"></span>
+                                            <span class="status-text">Evolved</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-type">
+                                        <i class="fas fa-palette"></i>
+                                        <span>Portfolio Website</span>
+                                    </div>
+                                    <p data-translate="project-portfolio-desc">Early portfolio demonstrating growth in web design and development. Shows progression in creating professional, responsive layouts and implementing modern design patterns.</p>
+
+                                    <div class="project-outcomes">
+                                        <h4><i class="fas fa-check-circle"></i> Skills Demonstrated</h4>
+                                        <ul>
+                                            <li>Responsive grid-based layout</li>
+                                            <li>CSS Flexbox &amp; Grid mastery</li>
+                                            <li>Professional design principles</li>
+                                            <li>Cross-browser compatibility</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="project-tags">
+                                        <span class="tag"><i class="fab fa-html5"></i> HTML5</span>
+                                        <span class="tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                                        <span class="tag"><i class="fas fa-palette"></i> Portfolio</span>
+                                        <span class="tag"><i class="fas fa-mobile-alt"></i> Responsive</span>
+                                    </div>
+
+                                    <div class="project-footer">
+                                        <a href="https://github.com/oshockley/Module-2-Portfolio" target="_blank" rel="noopener noreferrer" class="btn-secondary-sm">
+                                            <i class="fab fa-github"></i> View Code
+                                        </a>
+                                        <button onclick="openProjectModal('portfolio')" class="btn-primary-sm">
+                                            <i class="fas fa-info-circle"></i> Learn More
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-card scale-in stagger-4" data-category="frontend">
+                                <div class="project-image-container">
+                                    <div class="project-image icon-image">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <div class="project-overlay">
+                                        <div class="project-actions">
+                                            <button class="action-btn view-details" onclick="openProjectModal('demos')" title="View Details">
+                                                <i class="fas fa-expand"></i> View Details
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <div class="project-header">
+                                        <h3>Development Exercises</h3>
+                                        <div class="project-status">
+                                            <span class="status-dot maintenance"></span>
+                                            <span class="status-text">Archive</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-type">
+                                        <i class="fas fa-flask"></i>
+                                        <span>Learning Projects</span>
+                                    </div>
+                                    <p data-translate="project-demo-desc">Collection of early development exercises demonstrating fundamental programming concepts and progressive skill building from the ground up.</p>
+
+                                    <div class="project-outcomes">
+                                        <h4><i class="fas fa-check-circle"></i> Foundation Skills</h4>
+                                        <ul>
+                                            <li>Core HTML/CSS fundamentals</li>
+                                            <li>JavaScript basics and logic</li>
+                                            <li>Problem-solving approach</li>
+                                            <li>Progressive learning track</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="project-tags">
+                                        <span class="tag"><i class="fab fa-html5"></i> HTML</span>
+                                        <span class="tag"><i class="fas fa-book"></i> Learning</span>
+                                        <span class="tag"><i class="fas fa-flask"></i> Demos</span>
+                                        <span class="tag"><i class="fas fa-code"></i> Basics</span>
+                                    </div>
+
+                                    <div class="project-footer">
+                                        <a href="https://github.com/oshockley/first-day-demo" target="_blank" rel="noopener noreferrer" class="btn-secondary-sm">
+                                            <i class="fab fa-github"></i> View Code
+                                        </a>
+                                        <button onclick="openProjectModal('demos')" class="btn-primary-sm">
+                                            <i class="fas fa-info-circle"></i> Learn More
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="code-title">Async Data Fetching with Error Handling</div>
-                    <pre class="code-block" id="code1"><code class="language-javascript">// Robust API call with retry logic
+                </div>
+            </article>
+
+            <!-- Chapter 3 -->
+            <article class="chapter" data-chapter="3">
+                <div class="chapter-marker"><span>03</span></div>
+                <div class="chapter-body">
+                    <span class="chapter-eyebrow">2024 &mdash; Present</span>
+                    <h3 class="chapter-title">The Work</h3>
+                    <h4 class="chapter-role">Freelance Full Stack Developer</h4>
+                    <p>Delivering custom web solutions for clients worldwide. Specializing in building scalable, modern web applications that drive business growth and enhance user engagement.</p>
+                    <ul class="chapter-points">
+                        <li>Built 39+ successful projects for clients across various industries</li>
+                        <li>Specialized in full-stack MERN applications with advanced features and analytics</li>
+                        <li>Maintained 100% client satisfaction with on-time, budget-conscious delivery</li>
+                        <li>Provided ongoing maintenance and support for long-term client partnerships</li>
+                    </ul>
+
+                    <div class="waypoint" id="services">
+                        <h4 class="waypoint-heading"><i class="fas fa-toolbox"></i> What I Can Build For You</h4>
+                        <div class="services-grid">
+                            <div class="service-card scale-in stagger-2">
+                                <div class="service-icon">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <h3>Full Stack Development</h3>
+                                <p>Complete web application development from front-end to back-end. I build scalable, responsive applications using React, Node.js, and modern databases.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> Custom web applications</li>
+                                    <li><i class="fas fa-check"></i> RESTful API development</li>
+                                    <li><i class="fas fa-check"></i> Database design &amp; integration</li>
+                                    <li><i class="fas fa-check"></i> Responsive design</li>
+                                </ul>
+                            </div>
+
+                            <div class="service-card scale-in stagger-3">
+                                <div class="service-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <h3>Frontend Development</h3>
+                                <p>Beautiful, performant user interfaces that work flawlessly across all devices. Specializing in React, Vue.js, and modern CSS frameworks.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> React &amp; Vue.js applications</li>
+                                    <li><i class="fas fa-check"></i> Responsive web design</li>
+                                    <li><i class="fas fa-check"></i> UI/UX implementation</li>
+                                    <li><i class="fas fa-check"></i> Performance optimization</li>
+                                </ul>
+                            </div>
+
+                            <div class="service-card scale-in stagger-4">
+                                <div class="service-icon">
+                                    <i class="fas fa-server"></i>
+                                </div>
+                                <h3>Backend Development</h3>
+                                <p>Robust server-side solutions with secure APIs and efficient database management. Expert in Node.js, Express, MongoDB, and PostgreSQL.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> RESTful API development</li>
+                                    <li><i class="fas fa-check"></i> Database architecture</li>
+                                    <li><i class="fas fa-check"></i> Authentication &amp; security</li>
+                                    <li><i class="fas fa-check"></i> Server deployment</li>
+                                </ul>
+                            </div>
+
+                            <div class="service-card scale-in stagger-5">
+                                <div class="service-icon">
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                                <h3>Website Maintenance</h3>
+                                <p>Keep your website running smoothly with regular updates, bug fixes, and performance improvements. Ongoing support for peace of mind.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> Regular updates &amp; patches</li>
+                                    <li><i class="fas fa-check"></i> Bug fixing &amp; testing</li>
+                                    <li><i class="fas fa-check"></i> Performance monitoring</li>
+                                    <li><i class="fas fa-check"></i> Technical support</li>
+                                </ul>
+                            </div>
+
+                            <div class="service-card scale-in stagger-6">
+                                <div class="service-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <h3>Web Optimization</h3>
+                                <p>Improve your existing website's speed, SEO, and user experience. I analyze and optimize for maximum performance and conversions.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> Speed optimization</li>
+                                    <li><i class="fas fa-check"></i> SEO improvements</li>
+                                    <li><i class="fas fa-check"></i> Code refactoring</li>
+                                    <li><i class="fas fa-check"></i> Accessibility compliance</li>
+                                </ul>
+                            </div>
+
+                            <div class="service-card scale-in stagger-7">
+                                <div class="service-icon">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <h3>Consulting &amp; Support</h3>
+                                <p>Need technical guidance? I provide expert consultation on architecture, technology choices, and development best practices.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> Technical consultation</li>
+                                    <li><i class="fas fa-check"></i> Code reviews</li>
+                                    <li><i class="fas fa-check"></i> Architecture planning</li>
+                                    <li><i class="fas fa-check"></i> Team training</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="waypoint" id="projects">
+                        <h4 class="waypoint-heading"><i class="fas fa-rocket"></i> Flagship Projects</h4>
+                        <div class="projects-grid waypoint-grid">
+                            <div class="project-card scale-in stagger-2" data-category="fullstack">
+                                <div class="project-image-container">
+                                    <div class="project-image icon-image">
+                                        <i class="fas fa-bed"></i>
+                                    </div>
+                                    <div class="project-overlay">
+                                        <div class="project-actions">
+                                            <button class="action-btn view-details" onclick="openProjectModal('sleeptracker')" title="View Details">
+                                                <i class="fas fa-expand"></i> View Details
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <div class="project-header">
+                                        <h3>SleepTrackerPro</h3>
+                                        <div class="project-status">
+                                            <span class="status-dot active"></span>
+                                            <span class="status-text">Production</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-type">
+                                        <i class="fas fa-briefcase"></i>
+                                        <span>Full-Stack Web Application</span>
+                                    </div>
+                                    <p data-translate="project-sleep-desc">A comprehensive sleep monitoring application built with the MERN stack. Features include user authentication, sleep pattern visualization, advanced analytics dashboard, and personalized insights to help users improve their sleep quality.</p>
+
+                                    <div class="project-outcomes">
+                                        <h4><i class="fas fa-check-circle"></i> Key Outcomes</h4>
+                                        <ul>
+                                            <li>Full-featured CRUD operations with MongoDB</li>
+                                            <li>Secure JWT authentication system</li>
+                                            <li>Interactive data visualizations with Chart.js</li>
+                                            <li>Responsive design for all devices</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="project-tags">
+                                        <span class="tag"><i class="fab fa-react"></i> React</span>
+                                        <span class="tag"><i class="fab fa-node"></i> Node.js</span>
+                                        <span class="tag"><i class="fas fa-database"></i> MongoDB</span>
+                                        <span class="tag"><i class="fas fa-server"></i> Express</span>
+                                    </div>
+
+                                    <div class="project-footer">
+                                        <a href="https://github.com/oshockley/SleepTrackerPro" target="_blank" rel="noopener noreferrer" class="btn-secondary-sm">
+                                            <i class="fab fa-github"></i> View Code
+                                        </a>
+                                        <button onclick="openProjectModal('sleeptracker')" class="btn-primary-sm">
+                                            <i class="fas fa-info-circle"></i> Learn More
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-card scale-in stagger-3" data-category="frontend">
+                                <div class="project-image-container">
+                                    <div class="project-image icon-image">
+                                        <i class="fas fa-tasks"></i>
+                                    </div>
+                                    <div class="project-overlay">
+                                        <div class="project-actions">
+                                            <button class="action-btn view-details" onclick="openProjectModal('taskmanager')" title="View Details">
+                                                <i class="fas fa-expand"></i> View Details
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <div class="project-header">
+                                        <h3>Task Manager Pro</h3>
+                                        <div class="project-status">
+                                            <span class="status-dot active"></span>
+                                            <span class="status-text">Production</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-type">
+                                        <i class="fas fa-mobile-alt"></i>
+                                        <span>Responsive Web Application</span>
+                                    </div>
+                                    <p data-translate="project-task-desc">A productivity-focused task management application with clean UI and intuitive workflows. Built with vanilla JavaScript to demonstrate strong fundamentals without framework dependencies.</p>
+
+                                    <div class="project-outcomes">
+                                        <h4><i class="fas fa-check-circle"></i> Key Features</h4>
+                                        <ul>
+                                            <li>Local storage for data persistence</li>
+                                            <li>Drag-and-drop task organization</li>
+                                            <li>Priority levels and due dates</li>
+                                            <li>Mobile-first responsive design</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="project-tags">
+                                        <span class="tag"><i class="fab fa-html5"></i> HTML5</span>
+                                        <span class="tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                                        <span class="tag"><i class="fab fa-js"></i> JavaScript</span>
+                                        <span class="tag"><i class="fas fa-mobile-alt"></i> Responsive</span>
+                                    </div>
+
+                                    <div class="project-footer">
+                                        <a href="https://github.com/oshockley/Task-Manager-App" target="_blank" rel="noopener noreferrer" class="btn-secondary-sm">
+                                            <i class="fab fa-github"></i> View Code
+                                        </a>
+                                        <button onclick="openProjectModal('taskmanager')" class="btn-primary-sm">
+                                            <i class="fas fa-info-circle"></i> Learn More
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-card scale-in stagger-4" data-category="automation">
+                                <div class="project-image-container">
+                                    <div class="project-image icon-image">
+                                        <i class="fab fa-github"></i>
+                                    </div>
+                                    <div class="project-overlay">
+                                        <div class="project-actions">
+                                            <a href="https://github.com/oshockley" target="_blank" rel="noopener noreferrer" class="action-btn view-details">
+                                                <i class="fab fa-github"></i> Visit GitHub
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <div class="project-header">
+                                        <h3>Complete Portfolio</h3>
+                                        <div class="project-status">
+                                            <span class="status-dot active"></span>
+                                            <span class="status-text">39+ Repos</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-type">
+                                        <i class="fab fa-github"></i>
+                                        <span>GitHub Repository Collection</span>
+                                    </div>
+                                    <p data-translate="project-more-desc">Explore my complete collection of 39+ GitHub repositories showcasing continuous growth, diverse projects, and commitment to learning. Includes experiments, production applications, and collaborative work.</p>
+
+                                    <div class="project-outcomes">
+                                        <h4><i class="fas fa-chart-line"></i> Portfolio Highlights</h4>
+                                        <ul>
+                                            <li>39+ public repositories</li>
+                                            <li>Full-stack applications</li>
+                                            <li>Open-source contributions</li>
+                                            <li>Continuous development activity</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="project-tags">
+                                        <span class="tag"><i class="fab fa-github"></i> GitHub</span>
+                                        <span class="tag"><i class="fas fa-code-branch"></i> Open Source</span>
+                                        <span class="tag"><i class="fas fa-layer-group"></i> Various</span>
+                                        <span class="tag"><i class="fas fa-rocket"></i> Growing</span>
+                                    </div>
+
+                                    <div class="project-footer">
+                                        <a href="https://github.com/oshockley" target="_blank" rel="noopener noreferrer" class="btn-primary-sm full-width">
+                                            <i class="fab fa-github"></i> Explore All Projects
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="waypoint" id="code-showcase">
+                        <h4 class="waypoint-heading"><i class="fas fa-terminal"></i> Code in the Wild</h4>
+                        <div class="code-examples">
+                            <div class="code-card slide-in-left">
+                                <div class="code-header">
+                                    <div class="code-language">
+                                        <i class="fab fa-js"></i>
+                                        <span>JavaScript</span>
+                                    </div>
+                                    <div class="code-actions">
+                                        <button class="copy-code" onclick="copyCode('code1')">
+                                            <i class="fas fa-copy"></i> Copy
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="code-title">Async Data Fetching with Error Handling</div>
+                                <pre class="code-block" id="code1"><code class="language-javascript">// Robust API call with retry logic
 async function fetchWithRetry(url, options = {}, retries = 3) {
   for (let i = 0; i < retries; i++) {
     try {
       const response = await fetch(url, options);
-      
+
       if (!response.ok) {
         throw new Error(`HTTP ${response.status}`);
       }
-      
+
       return await response.json();
     } catch (error) {
       if (i === retries - 1) throw error;
-      
+
       // Exponential backoff
-      await new Promise(resolve => 
+      await new Promise(resolve =>
         setTimeout(resolve, Math.pow(2, i) * 1000)
       );
     }
   }
 }</code></pre>
-                </div>
+                            </div>
 
-                <div class="code-card slide-in-right">
-                    <div class="code-header">
-                        <div class="code-language">
-                            <i class="fab fa-react"></i>
-                            <span>React</span>
-                        </div>
-                        <div class="code-actions">
-                            <button class="copy-code" onclick="copyCode('code2')">
-                                <i class="fas fa-copy"></i> Copy
-                            </button>
-                        </div>
-                    </div>
-                    <div class="code-title">Custom Hook for Debounced Search</div>
-                    <pre class="code-block" id="code2"><code class="language-javascript">// Optimized search with debouncing
+                            <div class="code-card slide-in-right">
+                                <div class="code-header">
+                                    <div class="code-language">
+                                        <i class="fab fa-react"></i>
+                                        <span>React</span>
+                                    </div>
+                                    <div class="code-actions">
+                                        <button class="copy-code" onclick="copyCode('code2')">
+                                            <i class="fas fa-copy"></i> Copy
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="code-title">Custom Hook for Debounced Search</div>
+                                <pre class="code-block" id="code2"><code class="language-javascript">// Optimized search with debouncing
 function useDebounce(value, delay = 500) {
   const [debouncedValue, setDebouncedValue] = useState(value);
 
@@ -1033,107 +937,48 @@ function useDebounce(value, delay = 500) {
 
 // Usage in component
 const searchTerm = useDebounce(inputValue, 500);</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="waypoint" id="github-projects">
+                        <h4 class="waypoint-heading"><i class="fab fa-github"></i> Live From GitHub</h4>
+                        <p class="waypoint-subtext">Real-time updates from my most recent work</p>
+                        <div class="github-projects-grid" id="githubProjects">
+                            <div class="github-loading">
+                                <div class="loader-spinner"></div>
+                                <p>Loading latest projects...</p>
+                            </div>
+                        </div>
+                        <a href="https://github.com/oshockley" target="_blank" class="btn btn-primary cta-magnetic" style="margin-top: 2rem;">
+                            <i class="fab fa-github"></i> View All Repositories
+                        </a>
+                    </div>
                 </div>
-            </div>
+            </article>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="section-divider"></div>
-        <div class="container">
-            <h2 class="section-title fade-in" data-translate="experience-title">Experience & Background</h2>
-            <div class="timeline">
-                <div class="timeline-item slide-in-left stagger-1">
-                    <div class="timeline-date">2024 - Present</div>
-                    <div class="timeline-content">
-                        <h3 data-translate="exp-title-1">Freelance Full Stack Developer</h3>
-                        <h4 data-translate="exp-subtitle-1">Independent Contractor & Consultant</h4>
-                        <p data-translate="exp-desc-1">Delivering custom web solutions for clients worldwide. Specializing in building scalable, modern web applications that drive business growth and enhance user engagement.</p>
-                        <ul>
-                            <li data-translate="exp-item-1-1">Built 39+ successful projects for clients across various industries</li>
-                            <li data-translate="exp-item-1-2">Specialized in full-stack MERN applications with advanced features and analytics</li>
-                            <li data-translate="exp-item-1-3">Maintained 100% client satisfaction with on-time, budget-conscious delivery</li>
-                            <li data-translate="exp-item-1-4">Provided ongoing maintenance and support for long-term client partnerships</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item slide-in-right stagger-2">
-                    <div class="timeline-date">2023 - 2024</div>
-                    <div class="timeline-content">
-                        <h3 data-translate="exp-title-2">Software Engineering Certification</h3>
-                        <h4 data-translate="exp-subtitle-2">University of California, Irvine</h4>
-                        <p data-translate="exp-desc-2">Earned Software Engineering certification through comprehensive program at UC Irvine. Gained hands-on experience developing numerous solo and team projects using industry-standard technologies and best practices.</p>
-                        <ul>
-                            <li data-translate="exp-item-2-1">Completed intensive Software Engineering certification program at UC Irvine</li>
-                            <li data-translate="exp-item-2-2">Developed numerous solo and collaborative team projects from concept to deployment</li>
-                            <li data-translate="exp-item-2-3">Mastered full-stack development, Git workflows, and software engineering principles</li>
-                            <li data-translate="exp-item-2-4">Built strong foundation in data structures, algorithms, and scalable architecture</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item slide-in-left stagger-3">
-                    <div class="timeline-date">2020 - 2023</div>
-                    <div class="timeline-content">
-                        <h3 data-translate="exp-title-3">Sales & Client Relations</h3>
-                        <h4 data-translate="exp-subtitle-3">Professional Client Management Experience</h4>
-                        <p data-translate="exp-desc-3">Built strong foundation in client communication, project management, and exceeding expectations. These skills now enhance my freelance development services with superior client experience.</p>
-                        <ul>
-                            <li data-translate="exp-item-3-1">Expert client communication and requirement gathering</li>
-                            <li data-translate="exp-item-3-2">Proven track record of exceeding targets and client expectations</li>
-                            <li data-translate="exp-item-3-3">Strong project management and deadline-focused delivery</li>
-                            <li data-translate="exp-item-3-4">Client-first mindset that ensures satisfaction and long-term partnerships</li>
-                        </ul>
-                    </div>
-                </div>
+    <!-- Project Modal -->
+    <div id="projectModal" class="project-modal">
+        <div class="modal-backdrop" onclick="closeProjectModal()"></div>
+        <div class="modal-container">
+            <button class="modal-close" onclick="closeProjectModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-content" id="modalContent">
+                <!-- Content will be dynamically inserted -->
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- High-Conversion CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <div class="cta-badge">
-                    <span class="status-dot-large"></span>
-                    <span>Ready to Start Your Project</span>
-                </div>
-                <h2 class="cta-title">Let's Transform Your Ideas into Reality</h2>
-                <p class="cta-description">
-                    Looking for a reliable freelance developer? I'm available for new projects and ready to deliver 
-                    exceptional results. From concept to deployment, I'll work closely with you to build the perfect solution.
-                </p>
-                <div class="cta-buttons">
-                    <a href="#contact" class="btn btn-primary btn-lg cta-magnetic">
-                        <i class="fas fa-rocket"></i> Hire Me Today
-                    </a>
-                    <a href="#services" class="btn btn-secondary btn-lg cta-magnetic">
-                        <i class="fas fa-list"></i> View Services
-                    </a>
-                </div>
-                <div class="cta-stats-mini">
-                    <div class="stat-mini">
-                        <i class="fas fa-check-circle"></i>
-                        <span>100% Satisfaction Guarantee</span>
-                    </div>
-                    <div class="stat-mini">
-                        <i class="fas fa-clock"></i>
-                        <span>Fast 24hr Response</span>
-                    </div>
-                    <div class="stat-mini">
-                        <i class="fas fa-shield-alt"></i>
-                        <span>Free Consultation</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
+    <!-- What's Next / Contact Section -->
     <section id="contact" class="contact">
         <div class="section-divider"></div>
         <div class="container">
-            <h2 class="section-title fade-in" data-translate="contact-title">Let's Work Together</h2>
+            <span class="chapter-eyebrow chapter-eyebrow-center">What's Next</span>
+            <h2 class="section-title fade-in">Let's Write the Next Chapter</h2>
+            <p class="section-subtitle fade-in stagger-1">I'm available for freelance projects and ready to help bring your vision to life — from a complete web application to an ongoing partnership.</p>
             <div class="contact-content">
                 <div class="contact-info slide-in-left">
                     <h3 class="fade-in stagger-1" data-translate="contact-heading">Ready to Start Your Project?</h3>
@@ -1164,7 +1009,7 @@ const searchTerm = useDebounce(inputValue, 500);</code></pre>
                 </div>
                 <form class="contact-form slide-in-right" name="contact" method="POST" data-netlify="true" action="/thank-you.html">
                     <input type="hidden" name="form-name" value="contact">
-                    
+
                     <div class="form-group">
                         <label for="name" data-translate="form-name">Your Name</label>
                         <input type="text" id="name" name="name" placeholder="John Doe" required>
@@ -1196,7 +1041,7 @@ const searchTerm = useDebounce(inputValue, 500);</code></pre>
                     <p style="margin-top: 20px; padding: 20px; background: linear-gradient(135deg, rgba(0, 229, 160, 0.1) 0%, rgba(124, 58, 237, 0.1) 100%); border-left: 4px solid var(--color-accent); border-radius: 8px;">
                         <strong style="font-size: 1.1em; color: var(--color-accent);">💼 Ready to hire?</strong>
                         <br><br>
-                        <strong>📧 Email:</strong> 
+                        <strong>📧 Email:</strong>
                         <strong><a href="mailto:shockleyoneal@gmail.com" style="color: var(--color-accent); text-decoration: none;">shockleyoneal@gmail.com</a></strong>
                         <br><br>
                         <strong>📱 Phone/Text:</strong> <strong style="color: var(--color-accent);">(949) 315-8598</strong>
@@ -1215,19 +1060,6 @@ const searchTerm = useDebounce(inputValue, 500);</code></pre>
         <i class="fas fa-chevron-up"></i>
     </button>
 
-    <!-- Project Modal -->
-    <div id="projectModal" class="project-modal">
-        <div class="modal-backdrop" onclick="closeProjectModal()"></div>
-        <div class="modal-container">
-            <button class="modal-close" onclick="closeProjectModal()">
-                <i class="fas fa-times"></i>
-            </button>
-            <div class="modal-content" id="modalContent">
-                <!-- Content will be dynamically inserted -->
-            </div>
-        </div>
-    </div>
-
     </main>
     <!-- End Main Content -->
 
@@ -1241,8 +1073,8 @@ const searchTerm = useDebounce(inputValue, 500);</code></pre>
                 </div>
                 <div class="footer-links">
                     <a href="#home" data-translate="nav-home">Home</a>
-                    <a href="#about" data-translate="nav-about">About</a>
-                    <a href="#projects" data-translate="nav-projects">Projects</a>
+                    <a href="#journey">Journey</a>
+                    <a href="#projects" data-translate="nav-projects">Work</a>
                     <a href="#contact" data-translate="nav-contact">Contact</a>
                 </div>
                 <div class="footer-social">

@@ -1286,9 +1286,8 @@ function initScrollIndicator() {
     const scrollIndicator = document.querySelector('.scroll-indicator');
     if (scrollIndicator) {
         scrollIndicator.addEventListener('click', () => {
-            document.querySelector('#about').scrollIntoView({
-                behavior: 'smooth'
-            });
+            const target = document.querySelector('#journey');
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
         });
     }
 }
@@ -1325,7 +1324,8 @@ function initEnhancedScrollEffects() {
 
 // Enhanced Form Validation
 function initEnhancedFormValidation() {
-    const form = document.getElementById('contact-form');
+    const form = document.querySelector('.contact-form');
+    if (!form) return;
     const inputs = form.querySelectorAll('input, textarea');
     
     inputs.forEach(input => {
@@ -1381,6 +1381,43 @@ function initEnhancedFormValidation() {
     }
 }
 
+// Journey scroll-driven progress line
+function initJourneyProgress() {
+    const path = document.querySelector('.journey-path');
+    const fill = document.getElementById('journeyFill');
+    if (!path || !fill) return;
+
+    function update() {
+        const rect = path.getBoundingClientRect();
+        const anchor = window.innerHeight * 0.5;
+        const progress = Math.max(0, Math.min(rect.height, anchor - rect.top));
+        fill.style.height = progress + 'px';
+    }
+
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+}
+
+// Light up each chapter marker once it reaches the upper portion of the viewport.
+// Observes the small marker circle (not the whole chapter, which can be very
+// tall once skills/projects/services are embedded in it) so the threshold
+// is meaningful regardless of chapter content length.
+function initChapterMarkers() {
+    const markers = document.querySelectorAll('.chapter-marker');
+    if (!markers.length) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+            }
+        });
+    }, { threshold: 0, rootMargin: '0px 0px -40% 0px' });
+
+    markers.forEach(marker => observer.observe(marker));
+}
+
 // Initialize all enhanced features
 document.addEventListener('DOMContentLoaded', () => {
     initTypingAnimation();
@@ -1390,6 +1427,8 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollIndicator();
     initEnhancedScrollEffects();
     initEnhancedFormValidation();
+    initJourneyProgress();
+    initChapterMarkers();
     
     // Animate counters when hero stats are visible
     const heroStats = document.querySelector('.hero-stats');
