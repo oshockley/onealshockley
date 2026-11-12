@@ -1,111 +1,145 @@
-# O'Neal Shockley - Freelance Developer Portfolio
+# O'Neal Shockley: Portfolio
 
-A professional freelancer portfolio website showcasing my development services, skills, projects, and client testimonials.
+Portfolio site for a freelance full stack developer, deployed on Netlify.
 
-## 🚀 Features
+It's a static site with **zero dependencies**. A small Node script (`scripts/build.js`) reads one content file and writes plain HTML to `dist/`. Netlify runs that script automatically on every deploy.
 
-- **Responsive Design**: Fully responsive layout that works on all devices
-- **Modern UI/UX**: Clean, professional design with smooth animations
-- **Services Section**: Detailed breakdown of freelance services offered
-- **Interactive Navigation**: Smooth scrolling navigation with active section highlighting
-- **Portfolio Showcase**: Detailed project cards with technology stacks and live demo links
-- **Skills Section**: Organized display of technical skills by category
-- **Client Testimonials**: Social proof from satisfied clients
-- **Experience Timeline**: Professional background and expertise
-- **Conversion-Focused**: Multiple CTAs and optimized contact forms for client acquisition
-- **Performance Optimized**: Fast loading with optimized animations and scroll effects
+```
+src/
+  content.js      ← ALL text, links, projects, services, stats, testimonials
+  styles.css      ← design tokens + components (inlined into the page at build)
+  main.js         ← nav, reveals, case-study modals, copy buttons, GitHub feed, form
+  assets/
+    images/       ← photo, project screenshots, og-image.jpg
+    fonts/        ← self-hosted Bricolage Grotesque, Geist, Geist Mono (woff2)
+  public/         ← favicon.svg, favicon.ico, apple-touch-icon.png (copied to site root)
+scripts/
+  build.js        ← renders the site into dist/
+  dev.js          ← local preview server with auto-rebuild
+  highlight.js    ← build-time syntax highlighting for code snippets
+  icons.js        ← generated icon set (Simple Icons + Lucide)
+netlify.toml      ← build command, caching and security headers
+```
 
-## 🛠️ Technologies Used
+## Preview locally
 
-- **HTML5**: Semantic markup structure
-- **CSS3**: Modern styling with Flexbox and Grid
-- **JavaScript**: Interactive functionality and animations
-- **Font Awesome**: Icons for enhanced visual appeal
-- **Google Fonts**: Professional typography with Inter font family
-- **Netlify Forms**: Contact form integration
+Requires Node 18 or newer.
 
-## 📋 Sections
+```bash
+npm run dev
+```
 
-1. **Hero Section**: Introduction with strong CTA buttons and availability status
-2. **Services**: Comprehensive list of freelance services with detailed features
-3. **About**: Value proposition and reasons to hire
-4. **Skills**: Technical skills organized by category (Frontend, Backend, Tools)
-5. **Portfolio**: Featured projects with descriptions, tech stacks, and links
-6. **Testimonials**: Client testimonials and social proof
-7. **Experience**: Professional background and development journey
-8. **Contact**: Multiple contact methods and project inquiry form
-
-## 🎯 Key Features for Clients
-
-- **Clear Service Offerings**: Easy to understand what services are provided
-- **Portfolio Evidence**: Real examples of work with live demos and source code
-- **Social Proof**: Testimonials from satisfied clients
-- **Multiple Contact Methods**: Email, phone, LinkedIn, and contact form
-- **Fast Response Promise**: 24-hour response time commitment
-- **Professional Presentation**: Clean, modern design that inspires confidence
-- **Free Consultation**: Low barrier to entry for potential clients
-
-## 📱 Responsive Breakpoints
-
-- **Desktop**: 1200px and above
-- **Tablet**: 768px - 1199px
-- **Mobile**: Below 768px
-
-## 🔧 Setup Instructions
-
-1. Clone or download the repository
-2. Open `index.html` in your web browser
-3. Customize the content with your personal information:
-   - Update personal details in the HTML
-   - Replace placeholder project information
-   - Add your actual contact information
-   - Update social media links
-   - Replace placeholder images with actual photos
-
-## 📝 Customization
-
-### Personal Information
-- Update name, title, and description in the hero section
-- Modify the about section with your personal story
-- Update contact information and social media links
-
-### Projects
-- Replace example projects with your actual work
-- Update project descriptions, technologies, and links
-- Add screenshots or demo videos
-
-### Skills
-- Modify skill categories and technologies based on your expertise
-- Add or remove skills as needed
-
-### Experience
-- Update with your actual work experience
-- Include specific achievements and metrics
-- Adjust timeline dates and company information
-
-### Styling
-- Modify colors in the CSS file to match your brand
-- Adjust fonts, spacing, and layout as needed
-- Customize animations and transitions
-
-## 🌐 Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 📞 Contact
-
-- **Email**: oneal.shockleys@email.com
-- **Phone**: +1 (555) 123-4567
-- **LinkedIn**: [linkedin.com/in/onealshockleys](https://linkedin.com/in/onealshockleys)
-- **GitHub**: [github.com/onealshockleys](https://github.com/onealshockleys)
+Open http://localhost:3000. The site rebuilds whenever you save a file in `src/`, so refresh the browser to see the change. Contact form submissions are simulated locally and printed in the terminal. Real submissions only work on Netlify.
 
 ---
 
-⭐ **Note**: Remember to update all placeholder content with your actual information before deploying the website!
+## Editing content
+
+Everything you'd want to change lives in **`src/content.js`**. Edit it, save, and push. You never need to touch layout code.
+
+| To change… | Edit this in `content.js` |
+| --- | --- |
+| Headline, intro paragraph | `hero` |
+| "Available for new projects" badge | `person.available` (`true`/`false`) and `person.availabilityText` |
+| Email, phone, location | `person` |
+| GitHub / LinkedIn links | `social` |
+| "Hire Me" / "View My Work" labels | `cta` (used everywhere on the site) |
+| Hero stats | `stats`. `"{repos}"` fills in your live GitHub repo count at each deploy |
+| Tech marquee | `marquee` |
+| Journey chapters, skills | `journey.chapters` |
+| Services (and prices) | `services.items`. Set `startingAt: 1500` to show "Starting at $1,500"; leave `null` to hide |
+| Process steps | `process.steps` |
+| Featured case studies | `work.projects` |
+| Smaller project cards | `moreWork.items` |
+| Code snippets | `code.snippets` |
+| Contact form dropdowns | `contact.projectTypes`, `contact.budgets`, `contact.timelines` |
+| SEO title/description, site URL | `site` |
+
+**Icons:** wherever a list takes `icon` or tech names (`stack`, `skills`, `marquee`), use a slug from `scripts/icons.js` (for example `react`, `nodedotjs`, `mongodb`, `tailwindcss`). Any other text, such as `"Chart.js"`, shows as a plain tag without a logo.
+
+**Apostrophes:** wrap text that contains an apostrophe in double quotes, e.g. `"I'll reply within 24 hours"`.
+
+### Featured projects
+
+Each project in `work.projects` has:
+
+- `liveUrl`: the **Live Demo** button and green **Live** badge only appear when this is set. Leave it `null` when there's no working deployment. There are never dead links.
+- `badge`: optional extra label, e.g. `"Concept"`.
+- `problem`, `solution`, `features`, `highlights`, `stack`: shown on the card and in the case-study modal.
+- `image`: the base name of the screenshot files (see below).
+
+Each case study also has a shareable link: `https://onealshockley.netlify.app/#case-hilllife` opens that modal directly.
+
+### Adding testimonials
+
+Use **real quotes only.** The Testimonials section and its nav link stay hidden while the list is empty. They appear automatically as soon as you add one:
+
+```js
+testimonials: {
+  eyebrow: "Testimonials",
+  heading: "What clients say.",
+  items: [
+    {
+      quote: "Exactly what the client said, word for word.",
+      name: "Client Name",
+      role: "Owner",
+      company: "Their Business",
+      photo: "/assets/images/testimonial-client.webp", // optional, square, ~96×96
+      url: "https://their-business.com",              // optional
+    },
+  ],
+},
+```
+
+Ask the client for permission before publishing their name and quote.
+
+---
+
+## Swapping images
+
+All images live in `src/assets/images/`. Keep the file names, or update the matching path in `content.js`. The build adds a version hash to every image URL, so browsers always fetch the new file.
+
+| Image | File(s) | Size |
+| --- | --- | --- |
+| Profile photo | `oneal-shockley.webp` + `oneal-shockley.jpg` (fallback) | Square. **At least 800×800 recommended**: the current photo is 400×400, which looks slightly soft on high-density screens |
+| Project screenshots | `<image>-640.webp` and `<image>-1280.webp` | 16:10 (e.g. 1280×800), top of the page visible |
+| Social share image | `og-image.jpg` | Exactly 1200×630 |
+
+To make WebP files, use any converter (for example squoosh.app). Quality around 75–80 is plenty. When you swap the photo, update `person.photo.width` and `height` in `content.js` to the new dimensions.
+
+To add a new project screenshot, export `myproject-640.webp` and `myproject-1280.webp`, then set `image: "myproject"` on the project.
+
+---
+
+## Deploying to Netlify
+
+The site is already connected to Netlify at https://onealshockley.netlify.app.
+
+1. Commit and push to `main`. Netlify builds automatically with `node scripts/build.js` (configured in `netlify.toml`) and publishes `dist/`.
+2. Check **Deploys** in the Netlify dashboard: the build log ends with `✓ Built dist/ … GitHub: live · NN repos`.
+
+If you ever set up the site again from scratch: **Add new site → Import an existing project → pick this repo**. Netlify reads the build settings from `netlify.toml`, so there's nothing to fill in.
+
+**Optional:** to avoid GitHub API rate limits during builds, add an environment variable `GITHUB_TOKEN` (a fine-grained token with no extra permissions) under **Site configuration → Environment variables**. The build still works without it; it falls back to saved repo data.
+
+### Contact form submissions
+
+The form uses **Netlify Forms**. Netlify detects it automatically at deploy time (`data-netlify="true"`). A hidden honeypot field filters out bots.
+
+1. After the first deploy, open the Netlify dashboard → your site → **Forms**. You should see a form called **contact**. If form detection is turned off, click **Enable form detection** and redeploy.
+2. Submissions appear under **Forms → contact**, with name, email, project type, budget, timeline and message.
+3. **Get an email for every submission:** go to **Site configuration → Forms → Form notifications → Add notification → Email notification**, choose the `contact` form and enter `shockleyoneal@gmail.com`.
+4. Spam caught by the honeypot or Netlify's filter shows under **Forms → contact → Spam submissions**. Check it occasionally in case a real lead lands there.
+
+The free plan includes 100 form submissions per month.
+
+### Custom domain (optional)
+
+If you add a domain later (e.g. `onealshockley.com`), change `site.url` in `content.js` so canonical URLs, Open Graph tags, the sitemap and structured data all point to it.
+
+---
+
+## Checks done before launch
+
+- Lighthouse (local, gzip): mobile **98 / 100 / 100 / 100**, desktop **100 / 100 / 100 / 100** (Performance / Accessibility / Best Practices / SEO)
+- No console errors. Every link and button verified, including modals, copy buttons, the GitHub feed, form validation and success states, the mobile menu, keyboard focus order, reduced motion, and the 404 and thank-you pages.

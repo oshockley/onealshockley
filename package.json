@@ -1,37 +1,17 @@
 {
-  "name": "oneal-shockleys-portfolio",
-  "version": "1.0.0",
-  "description": "Professional portfolio website for Oneal Shockleys - Software Developer",
-  "main": "index.html",
-  "scripts": {
-    "start": "live-server --port=3000 --open=/",
-    "build": "echo 'No build process needed for static site'",
-    "deploy": "echo 'Ready for deployment'",
-    "serve": "python -m http.server 8000"
-  },
-  "keywords": [
-    "portfolio",
-    "software-developer",
-    "website",
-    "html",
-    "css",
-    "javascript",
-    "responsive",
-    "professional"
-  ],
-  "author": "Oneal Shockleys",
+  "name": "oneal-shockley-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Portfolio of O'Neal Shockley, Freelance Full Stack Developer. Static site, zero dependencies.",
+  "author": "O'Neal Shockley",
   "license": "MIT",
-  "devDependencies": {
-    "live-server": "^1.2.2"
+  "homepage": "https://onealshockley.netlify.app",
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "build": "node scripts/build.js",
+    "start": "node scripts/dev.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/onealshockleys/portfolio"
-  },
-  "homepage": "https://onealshockleys.github.io/portfolio",
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+  "engines": {
+    "node": ">=18"
+  }
 }
