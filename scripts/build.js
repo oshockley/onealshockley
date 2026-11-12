@@ -514,9 +514,16 @@ function renderContact(C, num) {
         </ul>
       </div>
 
-      <form class="card form" name="contact" method="POST" action="/thank-you/" data-netlify="true" netlify-honeypot="bot-field" data-contact-form data-reveal>
+      ${K.web3formsKey ? `
+      <form class="card form" name="contact" method="POST" action="https://api.web3forms.com/submit" data-provider="web3forms" data-contact-form data-reveal>
+        <input type="hidden" name="access_key" value="${esc(K.web3formsKey)}">
+        <input type="hidden" name="subject" value="New project inquiry from your portfolio">
+        <input type="hidden" name="from_name" value="${esc(P.name)} Portfolio">
+        <input type="hidden" name="redirect" value="${esc(C.site.url)}/thank-you/">
+        <p class="hp" aria-hidden="true"><label>Leave this field empty: <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></label></p>` : `
+      <form class="card form" name="contact" method="POST" action="/thank-you/" data-netlify="true" netlify-honeypot="bot-field" data-provider="netlify" data-contact-form data-reveal>
         <input type="hidden" name="form-name" value="contact">
-        <p class="hp" aria-hidden="true"><label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <p class="hp" aria-hidden="true"><label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>`}
         <h3 class="form-title">Tell me about your project</h3>
         <div class="form-grid">
           ${field('f-name', 'Your name', `<input id="f-name" name="name" type="text" autocomplete="name" required maxlength="100" aria-describedby="f-name-error">`)}

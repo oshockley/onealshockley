@@ -521,6 +521,11 @@ const searchTerm = useDebounce(inputValue, 500);`,
      CONTACT
      ------------------------------------------------------------------------ */
   contact: {
+    // FREE email delivery: get a key at https://web3forms.com (enter your Gmail,
+    // the key is emailed to you) and paste it here. Every form submission is then
+    // emailed straight to that address. Leave "" to use Netlify Forms instead.
+    // The key is safe to publish; it can only send email to you.
+    web3formsKey: "1a82ffc0-94bc-40f0-96f9-0b7f7b0f4287",
     eyebrow: "What's Next",
     heading: "Let's write the next chapter.",
     lead:

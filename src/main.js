@@ -149,7 +149,7 @@
         const target = document.querySelector(href);
         if (target) {
           target.scrollIntoView({ behavior: reducedMotion.matches ? 'auto' : 'smooth' });
-          const field = $('input:not([type=hidden]):not([name=bot-field])', target);
+          const field = $('input:not([type=hidden]):not([name=bot-field]):not([name=botcheck])', target);
           if (field) setTimeout(() => field.focus({ preventScroll: true }), reducedMotion.matches ? 0 : 600);
         }
       }
@@ -282,7 +282,7 @@
     const status = $('[data-form-status]', form);
     const submit = $('[data-submit]', form);
     const submitLabel = $('[data-submit-label]', form);
-    const fields = $$('input:not([type=hidden]):not([name=bot-field]), select, textarea', form);
+    const fields = $$('input:not([type=hidden]):not([name=bot-field]):not([name=botcheck]), select, textarea', form);
     const ICON_OK = '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>';
     const ICON_ERR = '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>';
 
@@ -324,6 +324,15 @@
 
       submit.disabled = true; submit.classList.add('is-loading');
       const original = submitLabel.textContent; submitLabel.textContent = 'Sending…';
+
+      // Web3Forms sits behind Cloudflare bot protection, which blocks background
+      // (fetch) requests. A normal form submission passes the check, so hand the
+      // validated form to the browser; Web3Forms then shows/redirects to a thank-you page.
+      if (form.dataset.provider === 'web3forms') {
+        HTMLFormElement.prototype.submit.call(form);
+        return;
+      }
+
       try {
         const body = new URLSearchParams(new FormData(form)).toString();
         const res = await fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body });
